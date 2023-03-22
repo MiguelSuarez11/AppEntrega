@@ -37,6 +37,7 @@
             this.txt_Nombres = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ptb_Foto = new System.Windows.Forms.PictureBox();
             this.dtg_Estudiantes = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -151,10 +152,10 @@
             this.btn_GuardarCalificacion = new System.Windows.Forms.PictureBox();
             this.btn_Nueva_Calificacion = new System.Windows.Forms.PictureBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.ptb_Foto = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_Foto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Estudiantes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Actualizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Consultar)).BeginInit();
@@ -193,7 +194,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_ConsultarCalificacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_GuardarCalificacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Nueva_Calificacion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_Foto)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -294,6 +294,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(360, 292);
             this.panel2.TabIndex = 6;
+            // 
+            // ptb_Foto
+            // 
+            this.ptb_Foto.Location = new System.Drawing.Point(274, 9);
+            this.ptb_Foto.Name = "ptb_Foto";
+            this.ptb_Foto.Size = new System.Drawing.Size(66, 70);
+            this.ptb_Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_Foto.TabIndex = 20;
+            this.ptb_Foto.TabStop = false;
+            this.ptb_Foto.Click += new System.EventHandler(this.ptb_foto_click);
             // 
             // dtg_Estudiantes
             // 
@@ -1450,15 +1460,6 @@
             this.label31.TabIndex = 6;
             this.label31.Text = "Módulo Calificaciones";
             // 
-            // ptb_Foto
-            // 
-            this.ptb_Foto.Location = new System.Drawing.Point(274, 9);
-            this.ptb_Foto.Name = "ptb_Foto";
-            this.ptb_Foto.Size = new System.Drawing.Size(66, 70);
-            this.ptb_Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptb_Foto.TabIndex = 20;
-            this.ptb_Foto.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1481,6 +1482,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_Foto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Estudiantes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Actualizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Consultar)).EndInit();
@@ -1524,7 +1526,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_ConsultarCalificacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_GuardarCalificacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Nueva_Calificacion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_Foto)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -59,3 +59,13 @@ C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulf
 C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe.config
 C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe
 C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.pdb
+C:\Users\SENA\Documents\GitHub\AppEntrega\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe.config
+C:\Users\SENA\Documents\GitHub\AppEntrega\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe
+C:\Users\SENA\Documents\GitHub\AppEntrega\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.pdb
+C:\Users\SENA\Documents\GitHub\AppEntrega\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.AssemblyReference.cache
+C:\Users\SENA\Documents\GitHub\AppEntrega\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Form1.resources
+C:\Users\SENA\Documents\GitHub\AppEntrega\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Properties.Resources.resources
+C:\Users\SENA\Documents\GitHub\AppEntrega\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.GenerateResource.cache
+C:\Users\SENA\Documents\GitHub\AppEntrega\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Documents\GitHub\AppEntrega\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.exe
+C:\Users\SENA\Documents\GitHub\AppEntrega\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.pdb
