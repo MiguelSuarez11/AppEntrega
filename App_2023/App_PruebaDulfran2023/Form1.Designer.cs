@@ -77,14 +77,14 @@
             this.label13 = new System.Windows.Forms.Label();
             this.txt_IdDocente = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.fecha = new System.Windows.Forms.TextBox();
+            this.lbl_Nom_Est = new System.Windows.Forms.Label();
+            this.lbl_Nom_Doc = new System.Windows.Forms.Label();
             this.txt_Id_Doc = new System.Windows.Forms.TextBox();
             this.txt_Cod_Cur = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.txt_Id_Est = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.dtg_Programacion = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -119,12 +119,10 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.txt_Fecha2 = new System.Windows.Forms.TextBox();
             this.txt_Anotaciones = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.txt_ID_Nota = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
             this.dtg_Anotaciones = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -136,12 +134,10 @@
             this.btn_NuevaNota = new System.Windows.Forms.PictureBox();
             this.label28 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.txt_Fecha3 = new System.Windows.Forms.TextBox();
             this.txt_Nota = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.txt_ID_CAL = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label30 = new System.Windows.Forms.Label();
             this.dtg_Calificaciones = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -152,6 +148,9 @@
             this.btn_GuardarCalificacion = new System.Windows.Forms.PictureBox();
             this.btn_Nueva_Calificacion = new System.Windows.Forms.PictureBox();
             this.label31 = new System.Windows.Forms.Label();
+            this.fecha = new System.Windows.Forms.DateTimePicker();
+            this.fecha2 = new System.Windows.Forms.DateTimePicker();
+            this.Fecha3 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -168,7 +167,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_GuardarDocente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_NuevoDocente)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Programacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Actualizarprograma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Consultar_programa)).BeginInit();
@@ -181,14 +179,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_GuardarCurso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Anotaciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ActualizarAnotaciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ConsultarAnotaciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_GuardarNota)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_NuevaNota)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Calificaciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ActualizarCalificacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ConsultarCalificacion)).BeginInit();
@@ -679,13 +675,14 @@
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.fecha);
+            this.panel4.Controls.Add(this.lbl_Nom_Est);
+            this.panel4.Controls.Add(this.lbl_Nom_Doc);
             this.panel4.Controls.Add(this.txt_Id_Doc);
             this.panel4.Controls.Add(this.txt_Cod_Cur);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.txt_Id_Est);
             this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.pictureBox6);
             this.panel4.Controls.Add(this.label16);
             this.panel4.Controls.Add(this.dtg_Programacion);
             this.panel4.Controls.Add(this.btn_Actualizarprograma);
@@ -698,32 +695,42 @@
             this.panel4.Size = new System.Drawing.Size(409, 292);
             this.panel4.TabIndex = 9;
             // 
-            // fecha
+            // lbl_Nom_Est
             // 
-            this.fecha.Enabled = false;
-            this.fecha.Location = new System.Drawing.Point(73, 48);
-            this.fecha.Name = "fecha";
-            this.fecha.Size = new System.Drawing.Size(100, 20);
-            this.fecha.TabIndex = 28;
-            this.fecha.TextChanged += new System.EventHandler(this.fecha_TextChanged);
+            this.lbl_Nom_Est.AutoSize = true;
+            this.lbl_Nom_Est.Location = new System.Drawing.Point(185, 84);
+            this.lbl_Nom_Est.Name = "lbl_Nom_Est";
+            this.lbl_Nom_Est.Size = new System.Drawing.Size(10, 13);
+            this.lbl_Nom_Est.TabIndex = 30;
+            this.lbl_Nom_Est.Text = "-";
+            // 
+            // lbl_Nom_Doc
+            // 
+            this.lbl_Nom_Doc.AutoSize = true;
+            this.lbl_Nom_Doc.Location = new System.Drawing.Point(184, 55);
+            this.lbl_Nom_Doc.Name = "lbl_Nom_Doc";
+            this.lbl_Nom_Doc.Size = new System.Drawing.Size(10, 13);
+            this.lbl_Nom_Doc.TabIndex = 29;
+            this.lbl_Nom_Doc.Text = "-";
             // 
             // txt_Id_Doc
             // 
             this.txt_Id_Doc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Id_Doc.Location = new System.Drawing.Point(257, 48);
+            this.txt_Id_Doc.Location = new System.Drawing.Point(79, 53);
             this.txt_Id_Doc.MaxLength = 10;
             this.txt_Id_Doc.Name = "txt_Id_Doc";
-            this.txt_Id_Doc.Size = new System.Drawing.Size(105, 20);
+            this.txt_Id_Doc.Size = new System.Drawing.Size(100, 20);
             this.txt_Id_Doc.TabIndex = 23;
             this.txt_Id_Doc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_IdDocente_KeyPress);
+            this.txt_Id_Doc.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Id_Doc_KeyUp);
             // 
             // txt_Cod_Cur
             // 
             this.txt_Cod_Cur.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Cod_Cur.Location = new System.Drawing.Point(257, 80);
+            this.txt_Cod_Cur.Location = new System.Drawing.Point(79, 108);
             this.txt_Cod_Cur.MaxLength = 10;
             this.txt_Cod_Cur.Name = "txt_Cod_Cur";
-            this.txt_Cod_Cur.Size = new System.Drawing.Size(105, 20);
+            this.txt_Cod_Cur.Size = new System.Drawing.Size(100, 20);
             this.txt_Cod_Cur.TabIndex = 27;
             this.txt_Cod_Cur.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Cod_Cur_KeyPress);
             // 
@@ -731,7 +738,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(201, 83);
+            this.label10.Location = new System.Drawing.Point(17, 111);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(59, 13);
             this.label10.TabIndex = 26;
@@ -741,7 +748,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(3, 83);
+            this.label17.Location = new System.Drawing.Point(8, 87);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(72, 13);
             this.label17.TabIndex = 24;
@@ -750,39 +757,29 @@
             // txt_Id_Est
             // 
             this.txt_Id_Est.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Id_Est.Location = new System.Drawing.Point(73, 78);
+            this.txt_Id_Est.Location = new System.Drawing.Point(79, 82);
             this.txt_Id_Est.MaxLength = 10;
             this.txt_Id_Est.Name = "txt_Id_Est";
             this.txt_Id_Est.Size = new System.Drawing.Size(100, 20);
             this.txt_Id_Est.TabIndex = 25;
             this.txt_Id_Est.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Id_Est_KeyPress);
+            this.txt_Id_Est.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Id_Est_KeyUp);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(197, 51);
+            this.label14.Location = new System.Drawing.Point(13, 56);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(63, 13);
             this.label14.TabIndex = 22;
             this.label14.Text = "Id Docente:";
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::App_PruebaDulfran2023.Properties.Resources.buscar;
-            this.pictureBox6.Location = new System.Drawing.Point(179, 52);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(10, 10);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 21;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(35, 51);
+            this.label16.Location = new System.Drawing.Point(215, 111);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(40, 13);
             this.label16.TabIndex = 19;
@@ -1115,12 +1112,11 @@
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.txt_Fecha2);
+            this.panel6.Controls.Add(this.fecha2);
             this.panel6.Controls.Add(this.txt_Anotaciones);
             this.panel6.Controls.Add(this.label25);
             this.panel6.Controls.Add(this.txt_ID_Nota);
             this.panel6.Controls.Add(this.label26);
-            this.panel6.Controls.Add(this.pictureBox2);
             this.panel6.Controls.Add(this.label27);
             this.panel6.Controls.Add(this.dtg_Anotaciones);
             this.panel6.Controls.Add(this.btn_ActualizarAnotaciones);
@@ -1132,14 +1128,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(362, 250);
             this.panel6.TabIndex = 11;
-            // 
-            // txt_Fecha2
-            // 
-            this.txt_Fecha2.Enabled = false;
-            this.txt_Fecha2.Location = new System.Drawing.Point(239, 48);
-            this.txt_Fecha2.Name = "txt_Fecha2";
-            this.txt_Fecha2.Size = new System.Drawing.Size(100, 20);
-            this.txt_Fecha2.TabIndex = 28;
             // 
             // txt_Anotaciones
             // 
@@ -1180,17 +1168,6 @@
             this.label26.Size = new System.Drawing.Size(69, 13);
             this.label26.TabIndex = 22;
             this.label26.Text = "Anotaciones:";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::App_PruebaDulfran2023.Properties.Resources.buscar;
-            this.pictureBox2.Location = new System.Drawing.Point(345, 52);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(10, 10);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label27
             // 
@@ -1295,12 +1272,11 @@
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.txt_Fecha3);
+            this.panel7.Controls.Add(this.Fecha3);
             this.panel7.Controls.Add(this.txt_Nota);
             this.panel7.Controls.Add(this.label24);
             this.panel7.Controls.Add(this.txt_ID_CAL);
             this.panel7.Controls.Add(this.label29);
-            this.panel7.Controls.Add(this.pictureBox3);
             this.panel7.Controls.Add(this.label30);
             this.panel7.Controls.Add(this.dtg_Calificaciones);
             this.panel7.Controls.Add(this.btn_ActualizarCalificacion);
@@ -1312,14 +1288,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(408, 250);
             this.panel7.TabIndex = 12;
-            // 
-            // txt_Fecha3
-            // 
-            this.txt_Fecha3.Enabled = false;
-            this.txt_Fecha3.Location = new System.Drawing.Point(239, 48);
-            this.txt_Fecha3.Name = "txt_Fecha3";
-            this.txt_Fecha3.Size = new System.Drawing.Size(100, 20);
-            this.txt_Fecha3.TabIndex = 28;
             // 
             // txt_Nota
             // 
@@ -1360,16 +1328,6 @@
             this.label29.Size = new System.Drawing.Size(33, 13);
             this.label29.TabIndex = 22;
             this.label29.Text = "Nota:";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::App_PruebaDulfran2023.Properties.Resources.buscar;
-            this.pictureBox3.Location = new System.Drawing.Point(345, 52);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(10, 10);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 21;
-            this.pictureBox3.TabStop = false;
             // 
             // label30
             // 
@@ -1471,6 +1429,30 @@
             this.label31.TabIndex = 6;
             this.label31.Text = "Módulo Calificaciones";
             // 
+            // fecha
+            // 
+            this.fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fecha.Location = new System.Drawing.Point(261, 108);
+            this.fecha.Name = "fecha";
+            this.fecha.Size = new System.Drawing.Size(100, 20);
+            this.fecha.TabIndex = 31;
+            // 
+            // fecha2
+            // 
+            this.fecha2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fecha2.Location = new System.Drawing.Point(238, 48);
+            this.fecha2.Name = "fecha2";
+            this.fecha2.Size = new System.Drawing.Size(100, 20);
+            this.fecha2.TabIndex = 32;
+            // 
+            // Fecha3
+            // 
+            this.Fecha3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Fecha3.Location = new System.Drawing.Point(239, 48);
+            this.Fecha3.Name = "Fecha3";
+            this.Fecha3.Size = new System.Drawing.Size(100, 20);
+            this.Fecha3.TabIndex = 32;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1508,7 +1490,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_NuevoDocente)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Programacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Actualizarprograma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Consultar_programa)).EndInit();
@@ -1523,7 +1504,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Anotaciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ActualizarAnotaciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ConsultarAnotaciones)).EndInit();
@@ -1531,7 +1511,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_NuevaNota)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Calificaciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ActualizarCalificacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ConsultarCalificacion)).EndInit();
@@ -1597,14 +1576,12 @@
         private System.Windows.Forms.PictureBox btn_Nuevo_Progamacion;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.TextBox txt_Id_Doc;
         private System.Windows.Forms.TextBox txt_Cod_Cur;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txt_Id_Est;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
@@ -1627,12 +1604,10 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox txt_Fecha2;
         private System.Windows.Forms.TextBox txt_Anotaciones;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox txt_ID_Nota;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.DataGridView dtg_Anotaciones;
         private System.Windows.Forms.PictureBox btn_ActualizarAnotaciones;
@@ -1649,12 +1624,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox txt_Fecha3;
         private System.Windows.Forms.TextBox txt_Nota;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox txt_ID_CAL;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.DataGridView dtg_Calificaciones;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
@@ -1666,6 +1639,11 @@
         private System.Windows.Forms.PictureBox btn_Nueva_Calificacion;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.PictureBox ptb_Foto;
+        private System.Windows.Forms.Label lbl_Nom_Doc;
+        private System.Windows.Forms.Label lbl_Nom_Est;
+        private System.Windows.Forms.DateTimePicker fecha;
+        private System.Windows.Forms.DateTimePicker fecha2;
+        private System.Windows.Forms.DateTimePicker Fecha3;
     }
 }
 

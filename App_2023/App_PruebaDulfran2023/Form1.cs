@@ -347,7 +347,7 @@ namespace App_PruebaDulfran2023
         }
         private void fnt_LimpiarControlesPrograma()
         {
-            fecha.Clear();
+            
             txt_Id_Doc.Clear();
             txt_Id_Est.Clear();
             txt_Cod_Cur.Clear();
@@ -454,7 +454,7 @@ namespace App_PruebaDulfran2023
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            txt_Fecha2.Text = DateTime.Today.ToShortDateString();
+            fecha2.Text = DateTime.Today.ToShortDateString();
         }
         private void fnt_LimpiarControlesCursos()
         {
@@ -561,7 +561,7 @@ namespace App_PruebaDulfran2023
         private void fnt_LimpiarControlesAnotaciones()
         {
             txt_ID_Nota.Clear();
-            txt_Fecha2.Clear();
+           
             txt_Anotaciones.Clear();
             txt_ID_Nota.Focus();
         }
@@ -596,7 +596,6 @@ namespace App_PruebaDulfran2023
         private void btn_GuardarNota_Click(object sender, EventArgs e)
         {
             if (txt_ID_Nota.Text == "" ||
-               txt_Fecha2.Text == "" ||
                txt_Anotaciones.Text == "")
             {
                 MessageBox.Show("Debe ingrear criterio de busqueda");
@@ -604,7 +603,7 @@ namespace App_PruebaDulfran2023
             else
             {
                 fnt_GuardarAnotaciones(txt_ID_Nota.Text,
-               txt_Fecha2.Text,
+               fecha2.Text,
                txt_Anotaciones.Text);
             }
         }
@@ -633,7 +632,7 @@ namespace App_PruebaDulfran2023
                 }
                 else
                 {
-                    txt_Fecha2.Text = Convert.ToString(dtg_Cursos.Rows[posicion].Cells[1].Value);
+                    fecha2.Text = Convert.ToString(dtg_Cursos.Rows[posicion].Cells[1].Value);
                     txt_Anotaciones.Text = Convert.ToString(dtg_Cursos.Rows[posicion].Cells[2].Value);
                 }
             }
@@ -651,12 +650,11 @@ namespace App_PruebaDulfran2023
 
         private void btn_ActualizarAnotaciones_Click(object sender, EventArgs e)
         {
-            fnt_ActualizarAnotaciones(txt_Fecha2.Text, txt_Anotaciones.Text);
+            fnt_ActualizarAnotaciones(fecha2.Text, txt_Anotaciones.Text);
         }
         private void fnt_LimpiarControlesCalificaciones()
         {
             txt_ID_CAL.Clear();
-            txt_Fecha2.Clear();
             txt_Nota.Clear();
             txt_ID_CAL.Focus();
         }
@@ -691,7 +689,7 @@ namespace App_PruebaDulfran2023
         private void btn_GuardarCalificacion_Click(object sender, EventArgs e)
         {
             if (txt_ID_CAL.Text == "" ||
-               txt_Fecha3.Text == "" ||
+               Fecha3.Text == "" ||
                txt_Nota.Text == "")
             {
                 MessageBox.Show("Debe ingrear criterio de busqueda");
@@ -699,7 +697,7 @@ namespace App_PruebaDulfran2023
             else
             {
                 fnt_GuardarCalificaciones(txt_ID_CAL.Text,
-               txt_Fecha3.Text,
+               Fecha3.Text,
                txt_Nota.Text);
             }
         }
@@ -728,7 +726,7 @@ namespace App_PruebaDulfran2023
                 }
                 else
                 {
-                    txt_Fecha3.Text = Convert.ToString(dtg_Cursos.Rows[posicion].Cells[1].Value);
+                    Fecha3.Text = Convert.ToString(dtg_Cursos.Rows[posicion].Cells[1].Value);
                     txt_Nota.Text = Convert.ToString(dtg_Cursos.Rows[posicion].Cells[2].Value);
                 }
             }
@@ -763,7 +761,7 @@ namespace App_PruebaDulfran2023
 
         private void btn_ActualizarCalificacion_Click(object sender, EventArgs e)
         {
-            fnt_ActualizarCalificaciones(txt_Fecha3.Text, txt_Nota.Text);
+            fnt_ActualizarCalificaciones(Fecha3.Text, txt_Nota.Text);
         }
 
         private void txt_Cod_Cur_KeyPress(object sender, KeyPressEventArgs e)
@@ -940,6 +938,60 @@ namespace App_PruebaDulfran2023
             else
             {
                 e.Handled = true;
+            }
+        }
+
+        private void txt_Id_Doc_KeyUp(object sender, KeyEventArgs e)
+        {
+            Boolean sw = false; int posicion = 0;
+            if (e.KeyCode == Keys.Enter)
+            {
+                for (int i = 0; i < dtg_Docentes.Rows.Count; i++)
+                {
+                    if (txt_Id_Doc.Text == Convert.ToString(dtg_Docentes.Rows[i].Cells[0].Value))
+                    {
+                        sw = true;
+                        posicion = i;
+                        break;
+                    }
+                }
+                if (sw == true)
+                {
+                    lbl_Nom_Doc.Text = Convert.ToString(dtg_Docentes.Rows[posicion].Cells[1].Value);
+
+                }
+                else
+                {
+                    MessageBox.Show("Este Docente no se encuentra registrado");
+                }
+
+            }
+        }
+
+        private void txt_Id_Est_KeyUp(object sender, KeyEventArgs e)
+        {
+            Boolean sw = false; int posicion = 0;
+            if (e.KeyCode == Keys.Enter)
+            {
+                for (int i = 0; i < dtg_Estudiantes.Rows.Count; i++)
+                {
+                    if (txt_Id_Est.Text == Convert.ToString(dtg_Estudiantes.Rows[i].Cells[0].Value))
+                    {
+                        sw = true;
+                        posicion = i;
+                        break;
+                    }
+                }
+                if (sw == true)
+                {
+                    lbl_Nom_Est.Text = Convert.ToString(dtg_Estudiantes.Rows[posicion].Cells[1].Value);
+
+                }
+                else
+                {
+                    MessageBox.Show("Este Estudiante no se encuentra registrado");
+                }
+
             }
         }
 
