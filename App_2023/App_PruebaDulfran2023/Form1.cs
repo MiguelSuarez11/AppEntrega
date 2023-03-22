@@ -995,6 +995,87 @@ namespace App_PruebaDulfran2023
             }
         }
 
+        private void txt_Cod_Cur_KeyUp(object sender, KeyEventArgs e)
+        {
+            Boolean sw = false; int posicion = 0;
+            if (e.KeyCode == Keys.Enter)
+            {
+                for (int i = 0; i < dtg_Cursos.Rows.Count; i++)
+                {
+                    if (txt_Cod_Cur.Text == Convert.ToString(dtg_Cursos.Rows[i].Cells[0].Value))
+                    {
+                        sw = true;
+                        posicion = i;
+                        break;
+                    }
+                }
+                if (sw == true)
+                {
+                    lbL_Cod_Cur.Text = Convert.ToString(dtg_Cursos.Rows[posicion].Cells[1].Value);
+
+                }
+                else
+                {
+                    MessageBox.Show("Este Curso no se encuentra registrado");
+                }
+
+            }
+        }
+
+        private void txt_ID_CAL_KeyUp(object sender, KeyEventArgs e)
+        {
+            Boolean sw = false; int posicion = 0;
+            if (e.KeyCode == Keys.Enter)
+            {
+                for (int i = 0; i < dtg_Estudiantes.Rows.Count; i++)
+                {
+                    if (txt_ID_CAL.Text == Convert.ToString(dtg_Estudiantes.Rows[i].Cells[0].Value))
+                    {
+                        sw = true;
+                        posicion = i;
+                        break;
+                    }
+                }
+                if (sw == true)
+                {
+                    lbl_Nom_Estudiante.Text = Convert.ToString(dtg_Estudiantes.Rows[posicion].Cells[1].Value);
+
+                }
+                else
+                {
+                    MessageBox.Show("Este Estudiante no se encuentra registrado");
+                }
+
+            }
+        }
+
+        private void txt_ID_Nota_KeyUp(object sender, KeyEventArgs e)
+        {
+            Boolean sw = false; int posicion = 0;
+            if (e.KeyCode == Keys.Enter)
+            {
+                for (int i = 0; i < dtg_Estudiantes.Rows.Count; i++)
+                {
+                    if (txt_ID_Nota.Text == Convert.ToString(dtg_Estudiantes.Rows[i].Cells[0].Value))
+                    {
+                        sw = true;
+                        posicion = i;
+                        break;
+                    }
+                }
+                if (sw == true)
+                {
+                    lbl_Nom_Anotaciones.Text = Convert.ToString(dtg_Estudiantes.Rows[posicion].Cells[1].Value);
+
+                }
+                else
+                {
+                    MessageBox.Show("Este Estudiante no se encuentra registrado");
+                }
+
+            }
+        }
+
         private void txt_Nombre_Curso_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))

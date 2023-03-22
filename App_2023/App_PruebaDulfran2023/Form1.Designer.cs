@@ -151,6 +151,9 @@
             this.fecha = new System.Windows.Forms.DateTimePicker();
             this.fecha2 = new System.Windows.Forms.DateTimePicker();
             this.Fecha3 = new System.Windows.Forms.DateTimePicker();
+            this.lbL_Cod_Cur = new System.Windows.Forms.Label();
+            this.lbl_Nom_Estudiante = new System.Windows.Forms.Label();
+            this.lbl_Nom_Anotaciones = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -228,7 +231,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 55);
+            this.label2.Location = new System.Drawing.Point(3, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 2;
@@ -645,7 +648,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(15, 55);
+            this.label12.Location = new System.Drawing.Point(8, 55);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(73, 13);
             this.label12.TabIndex = 2;
@@ -674,16 +677,17 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.lbL_Cod_Cur);
             this.panel4.Controls.Add(this.fecha);
             this.panel4.Controls.Add(this.lbl_Nom_Est);
             this.panel4.Controls.Add(this.lbl_Nom_Doc);
+            this.panel4.Controls.Add(this.label16);
             this.panel4.Controls.Add(this.txt_Id_Doc);
             this.panel4.Controls.Add(this.txt_Cod_Cur);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.txt_Id_Est);
             this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.label16);
             this.panel4.Controls.Add(this.dtg_Programacion);
             this.panel4.Controls.Add(this.btn_Actualizarprograma);
             this.panel4.Controls.Add(this.btn_Consultar_programa);
@@ -733,6 +737,7 @@
             this.txt_Cod_Cur.Size = new System.Drawing.Size(100, 20);
             this.txt_Cod_Cur.TabIndex = 27;
             this.txt_Cod_Cur.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Cod_Cur_KeyPress);
+            this.txt_Cod_Cur.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Cod_Cur_KeyUp);
             // 
             // label10
             // 
@@ -748,7 +753,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(8, 87);
+            this.label17.Location = new System.Drawing.Point(0, 89);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(72, 13);
             this.label17.TabIndex = 24;
@@ -779,7 +784,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(215, 111);
+            this.label16.Location = new System.Drawing.Point(33, 145);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(40, 13);
             this.label16.TabIndex = 19;
@@ -830,7 +835,7 @@
             // btn_Actualizarprograma
             // 
             this.btn_Actualizarprograma.Image = global::App_PruebaDulfran2023.Properties.Resources.actualizar__1_;
-            this.btn_Actualizarprograma.Location = new System.Drawing.Point(239, 154);
+            this.btn_Actualizarprograma.Location = new System.Drawing.Point(364, 154);
             this.btn_Actualizarprograma.Name = "btn_Actualizarprograma";
             this.btn_Actualizarprograma.Size = new System.Drawing.Size(30, 30);
             this.btn_Actualizarprograma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -841,7 +846,7 @@
             // btn_Consultar_programa
             // 
             this.btn_Consultar_programa.Image = global::App_PruebaDulfran2023.Properties.Resources.buscar;
-            this.btn_Consultar_programa.Location = new System.Drawing.Point(188, 154);
+            this.btn_Consultar_programa.Location = new System.Drawing.Point(364, 106);
             this.btn_Consultar_programa.Name = "btn_Consultar_programa";
             this.btn_Consultar_programa.Size = new System.Drawing.Size(30, 30);
             this.btn_Consultar_programa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -852,7 +857,7 @@
             // btn_Guardar_Programa
             // 
             this.btn_Guardar_Programa.Image = global::App_PruebaDulfran2023.Properties.Resources.disco_flexible;
-            this.btn_Guardar_Programa.Location = new System.Drawing.Point(137, 154);
+            this.btn_Guardar_Programa.Location = new System.Drawing.Point(364, 60);
             this.btn_Guardar_Programa.Name = "btn_Guardar_Programa";
             this.btn_Guardar_Programa.Size = new System.Drawing.Size(30, 30);
             this.btn_Guardar_Programa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -863,7 +868,7 @@
             // btn_Nuevo_Progamacion
             // 
             this.btn_Nuevo_Progamacion.Image = global::App_PruebaDulfran2023.Properties.Resources.agregar_archivo__2_;
-            this.btn_Nuevo_Progamacion.Location = new System.Drawing.Point(86, 154);
+            this.btn_Nuevo_Progamacion.Location = new System.Drawing.Point(364, 17);
             this.btn_Nuevo_Progamacion.Name = "btn_Nuevo_Progamacion";
             this.btn_Nuevo_Progamacion.Size = new System.Drawing.Size(30, 30);
             this.btn_Nuevo_Progamacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -929,17 +934,18 @@
             // txt_Horario
             // 
             this.txt_Horario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Horario.Location = new System.Drawing.Point(95, 114);
-            this.txt_Horario.MaxLength = 120;
+            this.txt_Horario.Location = new System.Drawing.Point(257, 80);
+            this.txt_Horario.MaxLength = 2000;
+            this.txt_Horario.Multiline = true;
             this.txt_Horario.Name = "txt_Horario";
-            this.txt_Horario.Size = new System.Drawing.Size(100, 20);
+            this.txt_Horario.Size = new System.Drawing.Size(246, 56);
             this.txt_Horario.TabIndex = 31;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(53, 117);
+            this.label23.Location = new System.Drawing.Point(210, 83);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(44, 13);
             this.label23.TabIndex = 30;
@@ -959,19 +965,19 @@
             // 
             this.txt_Nombre_Curso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Nombre_Curso.Location = new System.Drawing.Point(257, 48);
-            this.txt_Nombre_Curso.MaxLength = 30;
+            this.txt_Nombre_Curso.MaxLength = 200;
             this.txt_Nombre_Curso.Name = "txt_Nombre_Curso";
-            this.txt_Nombre_Curso.Size = new System.Drawing.Size(105, 20);
+            this.txt_Nombre_Curso.Size = new System.Drawing.Size(246, 20);
             this.txt_Nombre_Curso.TabIndex = 23;
             this.txt_Nombre_Curso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Nombre_Curso_KeyPress);
             // 
             // txt_Valor
             // 
             this.txt_Valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Valor.Location = new System.Drawing.Point(257, 80);
+            this.txt_Valor.Location = new System.Drawing.Point(95, 104);
             this.txt_Valor.MaxLength = 10;
             this.txt_Valor.Name = "txt_Valor";
-            this.txt_Valor.Size = new System.Drawing.Size(105, 20);
+            this.txt_Valor.Size = new System.Drawing.Size(100, 20);
             this.txt_Valor.TabIndex = 27;
             this.txt_Valor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Valor_KeyPress);
             // 
@@ -979,7 +985,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(217, 83);
+            this.label18.Location = new System.Drawing.Point(55, 107);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(34, 13);
             this.label18.TabIndex = 26;
@@ -1057,7 +1063,7 @@
             // btn_ActualizarCurso
             // 
             this.btn_ActualizarCurso.Image = global::App_PruebaDulfran2023.Properties.Resources.actualizar__1_;
-            this.btn_ActualizarCurso.Location = new System.Drawing.Point(462, 106);
+            this.btn_ActualizarCurso.Location = new System.Drawing.Point(368, 9);
             this.btn_ActualizarCurso.Name = "btn_ActualizarCurso";
             this.btn_ActualizarCurso.Size = new System.Drawing.Size(30, 30);
             this.btn_ActualizarCurso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1068,7 +1074,7 @@
             // btn_ConsultarCurso
             // 
             this.btn_ConsultarCurso.Image = global::App_PruebaDulfran2023.Properties.Resources.buscar;
-            this.btn_ConsultarCurso.Location = new System.Drawing.Point(426, 106);
+            this.btn_ConsultarCurso.Location = new System.Drawing.Point(332, 9);
             this.btn_ConsultarCurso.Name = "btn_ConsultarCurso";
             this.btn_ConsultarCurso.Size = new System.Drawing.Size(30, 30);
             this.btn_ConsultarCurso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1079,7 +1085,7 @@
             // btn_GuardarCurso
             // 
             this.btn_GuardarCurso.Image = global::App_PruebaDulfran2023.Properties.Resources.disco_flexible;
-            this.btn_GuardarCurso.Location = new System.Drawing.Point(390, 106);
+            this.btn_GuardarCurso.Location = new System.Drawing.Point(297, 9);
             this.btn_GuardarCurso.Name = "btn_GuardarCurso";
             this.btn_GuardarCurso.Size = new System.Drawing.Size(30, 30);
             this.btn_GuardarCurso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1090,7 +1096,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::App_PruebaDulfran2023.Properties.Resources.agregar_archivo__2_;
-            this.pictureBox7.Location = new System.Drawing.Point(354, 106);
+            this.pictureBox7.Location = new System.Drawing.Point(261, 9);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(30, 30);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1103,7 +1109,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label22.Location = new System.Drawing.Point(68, 9);
+            this.label22.Location = new System.Drawing.Point(28, 9);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(170, 25);
             this.label22.TabIndex = 6;
@@ -1112,6 +1118,7 @@
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.lbl_Nom_Anotaciones);
             this.panel6.Controls.Add(this.fecha2);
             this.panel6.Controls.Add(this.txt_Anotaciones);
             this.panel6.Controls.Add(this.label25);
@@ -1132,10 +1139,11 @@
             // txt_Anotaciones
             // 
             this.txt_Anotaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Anotaciones.Location = new System.Drawing.Point(73, 80);
-            this.txt_Anotaciones.MaxLength = 120;
+            this.txt_Anotaciones.Location = new System.Drawing.Point(80, 107);
+            this.txt_Anotaciones.MaxLength = 500;
+            this.txt_Anotaciones.Multiline = true;
             this.txt_Anotaciones.Name = "txt_Anotaciones";
-            this.txt_Anotaciones.Size = new System.Drawing.Size(105, 20);
+            this.txt_Anotaciones.Size = new System.Drawing.Size(115, 35);
             this.txt_Anotaciones.TabIndex = 23;
             this.txt_Anotaciones.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Atonaciones_KeyPress);
             // 
@@ -1143,7 +1151,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(3, 53);
+            this.label25.Location = new System.Drawing.Point(3, 51);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(74, 13);
             this.label25.TabIndex = 24;
@@ -1152,18 +1160,19 @@
             // txt_ID_Nota
             // 
             this.txt_ID_Nota.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ID_Nota.Location = new System.Drawing.Point(73, 48);
+            this.txt_ID_Nota.Location = new System.Drawing.Point(80, 51);
             this.txt_ID_Nota.MaxLength = 10;
             this.txt_ID_Nota.Name = "txt_ID_Nota";
-            this.txt_ID_Nota.Size = new System.Drawing.Size(100, 20);
+            this.txt_ID_Nota.Size = new System.Drawing.Size(115, 20);
             this.txt_ID_Nota.TabIndex = 25;
             this.txt_ID_Nota.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ID_Nota_KeyPress);
+            this.txt_ID_Nota.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_ID_Nota_KeyUp);
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(8, 83);
+            this.label26.Location = new System.Drawing.Point(8, 107);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(69, 13);
             this.label26.TabIndex = 22;
@@ -1173,7 +1182,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(201, 51);
+            this.label27.Location = new System.Drawing.Point(35, 88);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(40, 13);
             this.label27.TabIndex = 19;
@@ -1217,7 +1226,7 @@
             // btn_ActualizarAnotaciones
             // 
             this.btn_ActualizarAnotaciones.Image = global::App_PruebaDulfran2023.Properties.Resources.actualizar__1_;
-            this.btn_ActualizarAnotaciones.Location = new System.Drawing.Point(181, 104);
+            this.btn_ActualizarAnotaciones.Location = new System.Drawing.Point(274, 116);
             this.btn_ActualizarAnotaciones.Name = "btn_ActualizarAnotaciones";
             this.btn_ActualizarAnotaciones.Size = new System.Drawing.Size(30, 30);
             this.btn_ActualizarAnotaciones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1228,7 +1237,7 @@
             // btn_ConsultarAnotaciones
             // 
             this.btn_ConsultarAnotaciones.Image = global::App_PruebaDulfran2023.Properties.Resources.buscar;
-            this.btn_ConsultarAnotaciones.Location = new System.Drawing.Point(145, 106);
+            this.btn_ConsultarAnotaciones.Location = new System.Drawing.Point(238, 116);
             this.btn_ConsultarAnotaciones.Name = "btn_ConsultarAnotaciones";
             this.btn_ConsultarAnotaciones.Size = new System.Drawing.Size(30, 30);
             this.btn_ConsultarAnotaciones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1239,7 +1248,7 @@
             // btn_GuardarNota
             // 
             this.btn_GuardarNota.Image = global::App_PruebaDulfran2023.Properties.Resources.disco_flexible;
-            this.btn_GuardarNota.Location = new System.Drawing.Point(109, 106);
+            this.btn_GuardarNota.Location = new System.Drawing.Point(274, 80);
             this.btn_GuardarNota.Name = "btn_GuardarNota";
             this.btn_GuardarNota.Size = new System.Drawing.Size(30, 30);
             this.btn_GuardarNota.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1250,7 +1259,7 @@
             // btn_NuevaNota
             // 
             this.btn_NuevaNota.Image = global::App_PruebaDulfran2023.Properties.Resources.agregar_archivo__2_;
-            this.btn_NuevaNota.Location = new System.Drawing.Point(73, 106);
+            this.btn_NuevaNota.Location = new System.Drawing.Point(238, 80);
             this.btn_NuevaNota.Name = "btn_NuevaNota";
             this.btn_NuevaNota.Size = new System.Drawing.Size(30, 30);
             this.btn_NuevaNota.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1272,6 +1281,7 @@
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.lbl_Nom_Estudiante);
             this.panel7.Controls.Add(this.Fecha3);
             this.panel7.Controls.Add(this.txt_Nota);
             this.panel7.Controls.Add(this.label24);
@@ -1292,7 +1302,7 @@
             // txt_Nota
             // 
             this.txt_Nota.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Nota.Location = new System.Drawing.Point(73, 80);
+            this.txt_Nota.Location = new System.Drawing.Point(79, 80);
             this.txt_Nota.MaxLength = 10;
             this.txt_Nota.Name = "txt_Nota";
             this.txt_Nota.Size = new System.Drawing.Size(105, 20);
@@ -1312,12 +1322,13 @@
             // txt_ID_CAL
             // 
             this.txt_ID_CAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ID_CAL.Location = new System.Drawing.Point(73, 48);
+            this.txt_ID_CAL.Location = new System.Drawing.Point(79, 48);
             this.txt_ID_CAL.MaxLength = 10;
             this.txt_ID_CAL.Name = "txt_ID_CAL";
-            this.txt_ID_CAL.Size = new System.Drawing.Size(100, 20);
+            this.txt_ID_CAL.Size = new System.Drawing.Size(105, 20);
             this.txt_ID_CAL.TabIndex = 25;
             this.txt_ID_CAL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ID_CAL_KeyPress);
+            this.txt_ID_CAL.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_ID_CAL_KeyUp);
             // 
             // label29
             // 
@@ -1333,7 +1344,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(201, 51);
+            this.label30.Location = new System.Drawing.Point(41, 111);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(40, 13);
             this.label30.TabIndex = 19;
@@ -1377,7 +1388,7 @@
             // btn_ActualizarCalificacion
             // 
             this.btn_ActualizarCalificacion.Image = global::App_PruebaDulfran2023.Properties.Resources.actualizar__1_;
-            this.btn_ActualizarCalificacion.Location = new System.Drawing.Point(181, 104);
+            this.btn_ActualizarCalificacion.Location = new System.Drawing.Point(364, 117);
             this.btn_ActualizarCalificacion.Name = "btn_ActualizarCalificacion";
             this.btn_ActualizarCalificacion.Size = new System.Drawing.Size(30, 30);
             this.btn_ActualizarCalificacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1388,7 +1399,7 @@
             // btn_ConsultarCalificacion
             // 
             this.btn_ConsultarCalificacion.Image = global::App_PruebaDulfran2023.Properties.Resources.buscar;
-            this.btn_ConsultarCalificacion.Location = new System.Drawing.Point(145, 106);
+            this.btn_ConsultarCalificacion.Location = new System.Drawing.Point(364, 81);
             this.btn_ConsultarCalificacion.Name = "btn_ConsultarCalificacion";
             this.btn_ConsultarCalificacion.Size = new System.Drawing.Size(30, 30);
             this.btn_ConsultarCalificacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1399,7 +1410,7 @@
             // btn_GuardarCalificacion
             // 
             this.btn_GuardarCalificacion.Image = global::App_PruebaDulfran2023.Properties.Resources.disco_flexible;
-            this.btn_GuardarCalificacion.Location = new System.Drawing.Point(109, 106);
+            this.btn_GuardarCalificacion.Location = new System.Drawing.Point(364, 45);
             this.btn_GuardarCalificacion.Name = "btn_GuardarCalificacion";
             this.btn_GuardarCalificacion.Size = new System.Drawing.Size(30, 30);
             this.btn_GuardarCalificacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1410,7 +1421,7 @@
             // btn_Nueva_Calificacion
             // 
             this.btn_Nueva_Calificacion.Image = global::App_PruebaDulfran2023.Properties.Resources.agregar_archivo__2_;
-            this.btn_Nueva_Calificacion.Location = new System.Drawing.Point(73, 106);
+            this.btn_Nueva_Calificacion.Location = new System.Drawing.Point(364, 9);
             this.btn_Nueva_Calificacion.Name = "btn_Nueva_Calificacion";
             this.btn_Nueva_Calificacion.Size = new System.Drawing.Size(30, 30);
             this.btn_Nueva_Calificacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1432,7 +1443,7 @@
             // fecha
             // 
             this.fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fecha.Location = new System.Drawing.Point(261, 108);
+            this.fecha.Location = new System.Drawing.Point(79, 142);
             this.fecha.Name = "fecha";
             this.fecha.Size = new System.Drawing.Size(100, 20);
             this.fecha.TabIndex = 31;
@@ -1440,18 +1451,45 @@
             // fecha2
             // 
             this.fecha2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fecha2.Location = new System.Drawing.Point(238, 48);
+            this.fecha2.Location = new System.Drawing.Point(80, 81);
             this.fecha2.Name = "fecha2";
-            this.fecha2.Size = new System.Drawing.Size(100, 20);
+            this.fecha2.Size = new System.Drawing.Size(116, 20);
             this.fecha2.TabIndex = 32;
             // 
             // Fecha3
             // 
             this.Fecha3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Fecha3.Location = new System.Drawing.Point(239, 48);
+            this.Fecha3.Location = new System.Drawing.Point(79, 107);
             this.Fecha3.Name = "Fecha3";
             this.Fecha3.Size = new System.Drawing.Size(100, 20);
             this.Fecha3.TabIndex = 32;
+            // 
+            // lbL_Cod_Cur
+            // 
+            this.lbL_Cod_Cur.AutoSize = true;
+            this.lbL_Cod_Cur.Location = new System.Drawing.Point(185, 111);
+            this.lbL_Cod_Cur.Name = "lbL_Cod_Cur";
+            this.lbL_Cod_Cur.Size = new System.Drawing.Size(10, 13);
+            this.lbL_Cod_Cur.TabIndex = 32;
+            this.lbL_Cod_Cur.Text = "-";
+            // 
+            // lbl_Nom_Estudiante
+            // 
+            this.lbl_Nom_Estudiante.AutoSize = true;
+            this.lbl_Nom_Estudiante.Location = new System.Drawing.Point(190, 51);
+            this.lbl_Nom_Estudiante.Name = "lbl_Nom_Estudiante";
+            this.lbl_Nom_Estudiante.Size = new System.Drawing.Size(10, 13);
+            this.lbl_Nom_Estudiante.TabIndex = 33;
+            this.lbl_Nom_Estudiante.Text = "-";
+            // 
+            // lbl_Nom_Anotaciones
+            // 
+            this.lbl_Nom_Anotaciones.AutoSize = true;
+            this.lbl_Nom_Anotaciones.Location = new System.Drawing.Point(199, 55);
+            this.lbl_Nom_Anotaciones.Name = "lbl_Nom_Anotaciones";
+            this.lbl_Nom_Anotaciones.Size = new System.Drawing.Size(10, 13);
+            this.lbl_Nom_Anotaciones.TabIndex = 33;
+            this.lbl_Nom_Anotaciones.Text = "-";
             // 
             // Form1
             // 
@@ -1644,6 +1682,9 @@
         private System.Windows.Forms.DateTimePicker fecha;
         private System.Windows.Forms.DateTimePicker fecha2;
         private System.Windows.Forms.DateTimePicker Fecha3;
+        private System.Windows.Forms.Label lbL_Cod_Cur;
+        private System.Windows.Forms.Label lbl_Nom_Estudiante;
+        private System.Windows.Forms.Label lbl_Nom_Anotaciones;
     }
 }
 
