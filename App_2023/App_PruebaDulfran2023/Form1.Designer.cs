@@ -715,15 +715,17 @@
             this.txt_Id_Doc.Name = "txt_Id_Doc";
             this.txt_Id_Doc.Size = new System.Drawing.Size(105, 20);
             this.txt_Id_Doc.TabIndex = 23;
+            this.txt_Id_Doc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_IdDocente_KeyPress);
             // 
             // txt_Cod_Cur
             // 
             this.txt_Cod_Cur.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Cod_Cur.Location = new System.Drawing.Point(257, 80);
-            this.txt_Cod_Cur.MaxLength = 120;
+            this.txt_Cod_Cur.MaxLength = 10;
             this.txt_Cod_Cur.Name = "txt_Cod_Cur";
             this.txt_Cod_Cur.Size = new System.Drawing.Size(105, 20);
             this.txt_Cod_Cur.TabIndex = 27;
+            this.txt_Cod_Cur.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Cod_Cur_KeyPress);
             // 
             // label10
             // 
@@ -753,6 +755,7 @@
             this.txt_Id_Est.Name = "txt_Id_Est";
             this.txt_Id_Est.Size = new System.Drawing.Size(100, 20);
             this.txt_Id_Est.TabIndex = 25;
+            this.txt_Id_Est.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Id_Est_KeyPress);
             // 
             // label14
             // 
@@ -914,6 +917,7 @@
             this.txt_Creditos.Name = "txt_Creditos";
             this.txt_Creditos.Size = new System.Drawing.Size(100, 20);
             this.txt_Creditos.TabIndex = 25;
+            this.txt_Creditos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Cant_Cre_KeyPress);
             // 
             // txt_Codigo_Curso
             // 
@@ -923,6 +927,7 @@
             this.txt_Codigo_Curso.Name = "txt_Codigo_Curso";
             this.txt_Codigo_Curso.Size = new System.Drawing.Size(100, 20);
             this.txt_Codigo_Curso.TabIndex = 29;
+            this.txt_Codigo_Curso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Codigo_KeyPress);
             // 
             // txt_Horario
             // 
@@ -961,15 +966,17 @@
             this.txt_Nombre_Curso.Name = "txt_Nombre_Curso";
             this.txt_Nombre_Curso.Size = new System.Drawing.Size(105, 20);
             this.txt_Nombre_Curso.TabIndex = 23;
+            this.txt_Nombre_Curso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Nombre_Curso_KeyPress);
             // 
             // txt_Valor
             // 
             this.txt_Valor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Valor.Location = new System.Drawing.Point(257, 80);
-            this.txt_Valor.MaxLength = 120;
+            this.txt_Valor.MaxLength = 10;
             this.txt_Valor.Name = "txt_Valor";
             this.txt_Valor.Size = new System.Drawing.Size(105, 20);
             this.txt_Valor.TabIndex = 27;
+            this.txt_Valor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Valor_KeyPress);
             // 
             // label18
             // 
@@ -1142,6 +1149,7 @@
             this.txt_Anotaciones.Name = "txt_Anotaciones";
             this.txt_Anotaciones.Size = new System.Drawing.Size(105, 20);
             this.txt_Anotaciones.TabIndex = 23;
+            this.txt_Anotaciones.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Atonaciones_KeyPress);
             // 
             // label25
             // 
@@ -1161,6 +1169,7 @@
             this.txt_ID_Nota.Name = "txt_ID_Nota";
             this.txt_ID_Nota.Size = new System.Drawing.Size(100, 20);
             this.txt_ID_Nota.TabIndex = 25;
+            this.txt_ID_Nota.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ID_Nota_KeyPress);
             // 
             // label26
             // 
@@ -1320,6 +1329,7 @@
             this.txt_Nota.Name = "txt_Nota";
             this.txt_Nota.Size = new System.Drawing.Size(105, 20);
             this.txt_Nota.TabIndex = 23;
+            this.txt_Nota.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Nota_KeyPress);
             // 
             // label24
             // 
@@ -1339,6 +1349,7 @@
             this.txt_ID_CAL.Name = "txt_ID_CAL";
             this.txt_ID_CAL.Size = new System.Drawing.Size(100, 20);
             this.txt_ID_CAL.TabIndex = 25;
+            this.txt_ID_CAL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ID_CAL_KeyPress);
             // 
             // label29
             // 
