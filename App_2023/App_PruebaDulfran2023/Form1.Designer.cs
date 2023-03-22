@@ -241,7 +241,7 @@
             // txt_ID
             // 
             this.txt_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ID.Location = new System.Drawing.Point(80, 52);
+            this.txt_ID.Location = new System.Drawing.Point(80, 53);
             this.txt_ID.MaxLength = 10;
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(105, 20);
@@ -292,14 +292,14 @@
             this.panel2.Controls.Add(this.txt_ID);
             this.panel2.Location = new System.Drawing.Point(12, 57);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(360, 292);
+            this.panel2.Size = new System.Drawing.Size(508, 292);
             this.panel2.TabIndex = 6;
             // 
             // ptb_Foto
             // 
-            this.ptb_Foto.Location = new System.Drawing.Point(274, 9);
+            this.ptb_Foto.Location = new System.Drawing.Point(399, 9);
             this.ptb_Foto.Name = "ptb_Foto";
-            this.ptb_Foto.Size = new System.Drawing.Size(66, 70);
+            this.ptb_Foto.Size = new System.Drawing.Size(98, 99);
             this.ptb_Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_Foto.TabIndex = 20;
             this.ptb_Foto.TabStop = false;
@@ -318,12 +318,12 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dtg_Estudiantes.Location = new System.Drawing.Point(2, 190);
+            this.dtg_Estudiantes.Location = new System.Drawing.Point(-1, 188);
             this.dtg_Estudiantes.Margin = new System.Windows.Forms.Padding(2);
             this.dtg_Estudiantes.Name = "dtg_Estudiantes";
             this.dtg_Estudiantes.ReadOnly = true;
             this.dtg_Estudiantes.RowHeadersWidth = 4;
-            this.dtg_Estudiantes.Size = new System.Drawing.Size(352, 100);
+            this.dtg_Estudiantes.Size = new System.Drawing.Size(565, 100);
             this.dtg_Estudiantes.TabIndex = 18;
             // 
             // Column1
@@ -365,7 +365,7 @@
             // btn_Actualizar
             // 
             this.btn_Actualizar.Image = global::App_PruebaDulfran2023.Properties.Resources.actualizar__1_;
-            this.btn_Actualizar.Location = new System.Drawing.Point(228, 154);
+            this.btn_Actualizar.Location = new System.Drawing.Point(333, 132);
             this.btn_Actualizar.Name = "btn_Actualizar";
             this.btn_Actualizar.Size = new System.Drawing.Size(30, 30);
             this.btn_Actualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -376,7 +376,7 @@
             // btn_Consultar
             // 
             this.btn_Consultar.Image = global::App_PruebaDulfran2023.Properties.Resources.buscar;
-            this.btn_Consultar.Location = new System.Drawing.Point(192, 154);
+            this.btn_Consultar.Location = new System.Drawing.Point(297, 132);
             this.btn_Consultar.Name = "btn_Consultar";
             this.btn_Consultar.Size = new System.Drawing.Size(30, 30);
             this.btn_Consultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -387,7 +387,7 @@
             // btn_Guardar
             // 
             this.btn_Guardar.Image = global::App_PruebaDulfran2023.Properties.Resources.disco_flexible;
-            this.btn_Guardar.Location = new System.Drawing.Point(156, 154);
+            this.btn_Guardar.Location = new System.Drawing.Point(261, 132);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(30, 30);
             this.btn_Guardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -398,7 +398,7 @@
             // btn_Nuevo
             // 
             this.btn_Nuevo.Image = global::App_PruebaDulfran2023.Properties.Resources.agregar_archivo__2_;
-            this.btn_Nuevo.Location = new System.Drawing.Point(120, 154);
+            this.btn_Nuevo.Location = new System.Drawing.Point(225, 132);
             this.btn_Nuevo.Name = "btn_Nuevo";
             this.btn_Nuevo.Size = new System.Drawing.Size(30, 30);
             this.btn_Nuevo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -409,7 +409,7 @@
             // txt_Correo
             // 
             this.txt_Correo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Correo.Location = new System.Drawing.Point(250, 116);
+            this.txt_Correo.Location = new System.Drawing.Point(288, 82);
             this.txt_Correo.MaxLength = 120;
             this.txt_Correo.Name = "txt_Correo";
             this.txt_Correo.Size = new System.Drawing.Size(105, 20);
@@ -420,7 +420,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(213, 119);
+            this.label7.Location = new System.Drawing.Point(247, 83);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(41, 13);
             this.label7.TabIndex = 11;
@@ -449,7 +449,7 @@
             // txt_Apellidos
             // 
             this.txt_Apellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Apellidos.Location = new System.Drawing.Point(250, 83);
+            this.txt_Apellidos.Location = new System.Drawing.Point(288, 53);
             this.txt_Apellidos.MaxLength = 20;
             this.txt_Apellidos.Name = "txt_Apellidos";
             this.txt_Apellidos.Size = new System.Drawing.Size(105, 20);
@@ -460,7 +460,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(202, 86);
+            this.label5.Location = new System.Drawing.Point(239, 56);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 7;
@@ -494,9 +494,9 @@
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.txt_IdDocente);
-            this.panel3.Location = new System.Drawing.Point(397, 57);
+            this.panel3.Location = new System.Drawing.Point(541, 57);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(360, 292);
+            this.panel3.Size = new System.Drawing.Size(362, 292);
             this.panel3.TabIndex = 8;
             // 
             // dtg_Docentes
@@ -693,9 +693,9 @@
             this.panel4.Controls.Add(this.btn_Guardar_Programa);
             this.panel4.Controls.Add(this.btn_Nuevo_Progamacion);
             this.panel4.Controls.Add(this.label15);
-            this.panel4.Location = new System.Drawing.Point(777, 57);
+            this.panel4.Location = new System.Drawing.Point(919, 57);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(377, 292);
+            this.panel4.Size = new System.Drawing.Size(409, 292);
             this.panel4.TabIndex = 9;
             // 
             // fecha
@@ -800,7 +800,7 @@
             this.dtg_Programacion.Name = "dtg_Programacion";
             this.dtg_Programacion.ReadOnly = true;
             this.dtg_Programacion.RowHeadersWidth = 4;
-            this.dtg_Programacion.Size = new System.Drawing.Size(377, 101);
+            this.dtg_Programacion.Size = new System.Drawing.Size(408, 101);
             this.dtg_Programacion.TabIndex = 18;
             // 
             // dataGridViewTextBoxColumn3
@@ -903,7 +903,7 @@
             this.panel5.Controls.Add(this.label22);
             this.panel5.Location = new System.Drawing.Point(12, 355);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(394, 250);
+            this.panel5.Size = new System.Drawing.Size(508, 250);
             this.panel5.TabIndex = 10;
             // 
             // txt_Creditos
@@ -975,7 +975,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(201, 83);
+            this.label18.Location = new System.Drawing.Point(217, 83);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(34, 13);
             this.label18.TabIndex = 26;
@@ -1017,7 +1017,7 @@
             this.dtg_Cursos.Name = "dtg_Cursos";
             this.dtg_Cursos.ReadOnly = true;
             this.dtg_Cursos.RowHeadersWidth = 4;
-            this.dtg_Cursos.Size = new System.Drawing.Size(393, 101);
+            this.dtg_Cursos.Size = new System.Drawing.Size(507, 101);
             this.dtg_Cursos.TabIndex = 18;
             // 
             // dataGridViewTextBoxColumn9
@@ -1053,7 +1053,7 @@
             // btn_ActualizarCurso
             // 
             this.btn_ActualizarCurso.Image = global::App_PruebaDulfran2023.Properties.Resources.actualizar__1_;
-            this.btn_ActualizarCurso.Location = new System.Drawing.Point(314, 106);
+            this.btn_ActualizarCurso.Location = new System.Drawing.Point(462, 106);
             this.btn_ActualizarCurso.Name = "btn_ActualizarCurso";
             this.btn_ActualizarCurso.Size = new System.Drawing.Size(30, 30);
             this.btn_ActualizarCurso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1064,7 +1064,7 @@
             // btn_ConsultarCurso
             // 
             this.btn_ConsultarCurso.Image = global::App_PruebaDulfran2023.Properties.Resources.buscar;
-            this.btn_ConsultarCurso.Location = new System.Drawing.Point(278, 106);
+            this.btn_ConsultarCurso.Location = new System.Drawing.Point(426, 106);
             this.btn_ConsultarCurso.Name = "btn_ConsultarCurso";
             this.btn_ConsultarCurso.Size = new System.Drawing.Size(30, 30);
             this.btn_ConsultarCurso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1075,7 +1075,7 @@
             // btn_GuardarCurso
             // 
             this.btn_GuardarCurso.Image = global::App_PruebaDulfran2023.Properties.Resources.disco_flexible;
-            this.btn_GuardarCurso.Location = new System.Drawing.Point(242, 106);
+            this.btn_GuardarCurso.Location = new System.Drawing.Point(390, 106);
             this.btn_GuardarCurso.Name = "btn_GuardarCurso";
             this.btn_GuardarCurso.Size = new System.Drawing.Size(30, 30);
             this.btn_GuardarCurso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1086,7 +1086,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::App_PruebaDulfran2023.Properties.Resources.agregar_archivo__2_;
-            this.pictureBox7.Location = new System.Drawing.Point(206, 106);
+            this.pictureBox7.Location = new System.Drawing.Point(354, 106);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(30, 30);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1121,7 +1121,7 @@
             this.panel6.Controls.Add(this.btn_GuardarNota);
             this.panel6.Controls.Add(this.btn_NuevaNota);
             this.panel6.Controls.Add(this.label28);
-            this.panel6.Location = new System.Drawing.Point(436, 355);
+            this.panel6.Location = new System.Drawing.Point(541, 355);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(362, 250);
             this.panel6.TabIndex = 11;
@@ -1299,9 +1299,9 @@
             this.panel7.Controls.Add(this.btn_GuardarCalificacion);
             this.panel7.Controls.Add(this.btn_Nueva_Calificacion);
             this.panel7.Controls.Add(this.label31);
-            this.panel7.Location = new System.Drawing.Point(804, 355);
+            this.panel7.Location = new System.Drawing.Point(919, 355);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(350, 250);
+            this.panel7.Size = new System.Drawing.Size(408, 250);
             this.panel7.TabIndex = 12;
             // 
             // txt_Fecha3
