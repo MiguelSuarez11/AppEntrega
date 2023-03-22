@@ -1,0 +1,61 @@
+c:\users\sena\documents\visual studio 2012\Projects\App_PruebaDulfran2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe.config
+C:\Users\SENA\Documents\GitHub\AplicacionProfePrueba\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe.config
+C:\Users\SENA\Documents\GitHub\AplicacionProfePrueba\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe
+C:\Users\SENA\Documents\GitHub\AplicacionProfePrueba\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.pdb
+C:\Users\SENA\Documents\GitHub\AplicacionProfePrueba\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csprojResolveAssemblyReference.cache
+C:\Users\SENA\Documents\GitHub\AplicacionProfePrueba\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Form1.resources
+C:\Users\SENA\Documents\GitHub\AplicacionProfePrueba\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Properties.Resources.resources
+C:\Users\SENA\Documents\GitHub\AplicacionProfePrueba\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.GenerateResource.Cache
+C:\Users\SENA\Documents\GitHub\AplicacionProfePrueba\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.exe
+C:\Users\SENA\Documents\GitHub\AplicacionProfePrueba\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.pdb
+C:\Users\SENA\Documents\GitHub\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe.config
+C:\Users\SENA\Documents\GitHub\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.exe
+C:\Users\SENA\Documents\GitHub\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.pdb
+C:\Users\SENA\Desktop\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe.config
+C:\Users\SENA\Desktop\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.exe
+C:\Users\SENA\Desktop\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.pdb
+C:\Users\SENA\Desktop\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe
+C:\Users\SENA\Desktop\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.pdb
+C:\Users\SENA\Desktop\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Form1.resources
+C:\Users\SENA\Desktop\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Properties.Resources.resources
+C:\Users\SENA\Desktop\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.GenerateResource.Cache
+C:\Users\SENA\Desktop\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\AplicacionPrueba\App_PruebaDulfran2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.CoreCompileInputs.cache
+D:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe.config
+D:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.exe
+D:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.pdb
+D:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe
+D:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.pdb
+D:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csprojResolveAssemblyReference.cache
+D:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Form1.resources
+D:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Properties.Resources.resources
+D:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.GenerateResource.Cache
+C:\Users\LMS\Desktop\miguel\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe.config
+C:\Users\LMS\Desktop\miguel\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.exe
+C:\Users\LMS\Desktop\miguel\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.pdb
+C:\Users\LMS\Desktop\miguel\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe
+C:\Users\LMS\Desktop\miguel\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.pdb
+C:\Users\LMS\Desktop\miguel\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csprojResolveAssemblyReference.cache
+C:\Users\LMS\Desktop\miguel\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Form1.resources
+C:\Users\LMS\Desktop\miguel\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Properties.Resources.resources
+C:\Users\LMS\Desktop\miguel\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.GenerateResource.Cache
+E:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe.config
+E:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe
+E:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.pdb
+E:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.AssemblyReference.cache
+E:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Form1.resources
+E:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Properties.Resources.resources
+E:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.GenerateResource.cache
+E:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.CoreCompileInputs.cache
+E:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.exe
+E:\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.pdb
+C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Form1.resources
+C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.Properties.Resources.resources
+C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.GenerateResource.cache
+C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.exe
+C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulfran2023\obj\Debug\App_PruebaDulfran2023.pdb
+C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe.config
+C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.exe
+C:\Users\SENA\Desktop\Nueva carpeta (3)\AplicacionPrueba\App_2023\App_PruebaDulfran2023\bin\Debug\App_PruebaDulfran2023.pdb
