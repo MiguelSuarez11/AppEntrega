@@ -962,7 +962,7 @@
             // 
             this.txt_Nombre_Curso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Nombre_Curso.Location = new System.Drawing.Point(257, 48);
-            this.txt_Nombre_Curso.MaxLength = 10;
+            this.txt_Nombre_Curso.MaxLength = 30;
             this.txt_Nombre_Curso.Name = "txt_Nombre_Curso";
             this.txt_Nombre_Curso.Size = new System.Drawing.Size(105, 20);
             this.txt_Nombre_Curso.TabIndex = 23;
@@ -1145,7 +1145,7 @@
             // 
             this.txt_Anotaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Anotaciones.Location = new System.Drawing.Point(73, 80);
-            this.txt_Anotaciones.MaxLength = 10;
+            this.txt_Anotaciones.MaxLength = 120;
             this.txt_Anotaciones.Name = "txt_Anotaciones";
             this.txt_Anotaciones.Size = new System.Drawing.Size(105, 20);
             this.txt_Anotaciones.TabIndex = 23;

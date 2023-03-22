@@ -894,22 +894,10 @@ namespace App_PruebaDulfran2023
 
         private void txt_Atonaciones_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (Char.IsNumber(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-
-            else if (Char.IsSeparator(e.KeyChar))
+            if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
             {
                 e.Handled = true;
-            }
-            else
-            {
-                e.Handled = true;
+                return;
             }
         }
 
