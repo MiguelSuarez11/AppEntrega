@@ -77,15 +77,17 @@
             this.label13 = new System.Windows.Forms.Label();
             this.txt_IdDocente = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lbL_Cod_Cur = new System.Windows.Forms.Label();
+            this.fecha = new System.Windows.Forms.DateTimePicker();
             this.lbl_Nom_Est = new System.Windows.Forms.Label();
             this.lbl_Nom_Doc = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.txt_Id_Doc = new System.Windows.Forms.TextBox();
             this.txt_Cod_Cur = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.txt_Id_Est = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.dtg_Programacion = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -119,6 +121,8 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lbl_Nom_Anotaciones = new System.Windows.Forms.Label();
+            this.fecha2 = new System.Windows.Forms.DateTimePicker();
             this.txt_Anotaciones = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.txt_ID_Nota = new System.Windows.Forms.TextBox();
@@ -134,6 +138,8 @@
             this.btn_NuevaNota = new System.Windows.Forms.PictureBox();
             this.label28 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.lbl_Nom_Estudiante = new System.Windows.Forms.Label();
+            this.Fecha3 = new System.Windows.Forms.DateTimePicker();
             this.txt_Nota = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.txt_ID_CAL = new System.Windows.Forms.TextBox();
@@ -148,12 +154,6 @@
             this.btn_GuardarCalificacion = new System.Windows.Forms.PictureBox();
             this.btn_Nueva_Calificacion = new System.Windows.Forms.PictureBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.fecha = new System.Windows.Forms.DateTimePicker();
-            this.fecha2 = new System.Windows.Forms.DateTimePicker();
-            this.Fecha3 = new System.Windows.Forms.DateTimePicker();
-            this.lbL_Cod_Cur = new System.Windows.Forms.Label();
-            this.lbl_Nom_Estudiante = new System.Windows.Forms.Label();
-            this.lbl_Nom_Anotaciones = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -240,10 +240,10 @@
             // txt_ID
             // 
             this.txt_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ID.Location = new System.Drawing.Point(80, 53);
+            this.txt_ID.Location = new System.Drawing.Point(76, 53);
             this.txt_ID.MaxLength = 10;
             this.txt_ID.Name = "txt_ID";
-            this.txt_ID.Size = new System.Drawing.Size(105, 20);
+            this.txt_ID.Size = new System.Drawing.Size(94, 20);
             this.txt_ID.TabIndex = 3;
             this.txt_ID.TextChanged += new System.EventHandler(this.txt_ID_TextChanged);
             this.txt_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ID_KeyPress);
@@ -251,10 +251,10 @@
             // txt_Nombres
             // 
             this.txt_Nombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Nombres.Location = new System.Drawing.Point(80, 79);
+            this.txt_Nombres.Location = new System.Drawing.Point(76, 79);
             this.txt_Nombres.MaxLength = 20;
             this.txt_Nombres.Name = "txt_Nombres";
-            this.txt_Nombres.Size = new System.Drawing.Size(105, 20);
+            this.txt_Nombres.Size = new System.Drawing.Size(237, 20);
             this.txt_Nombres.TabIndex = 5;
             this.txt_Nombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Nombres_KeyPress);
             // 
@@ -262,7 +262,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 86);
+            this.label3.Location = new System.Drawing.Point(21, 84);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 4;
@@ -364,7 +364,7 @@
             // btn_Actualizar
             // 
             this.btn_Actualizar.Image = global::App_PruebaDulfran2023.Properties.Resources.actualizar__1_;
-            this.btn_Actualizar.Location = new System.Drawing.Point(333, 132);
+            this.btn_Actualizar.Location = new System.Drawing.Point(466, 137);
             this.btn_Actualizar.Name = "btn_Actualizar";
             this.btn_Actualizar.Size = new System.Drawing.Size(30, 30);
             this.btn_Actualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -375,7 +375,7 @@
             // btn_Consultar
             // 
             this.btn_Consultar.Image = global::App_PruebaDulfran2023.Properties.Resources.buscar;
-            this.btn_Consultar.Location = new System.Drawing.Point(297, 132);
+            this.btn_Consultar.Location = new System.Drawing.Point(430, 137);
             this.btn_Consultar.Name = "btn_Consultar";
             this.btn_Consultar.Size = new System.Drawing.Size(30, 30);
             this.btn_Consultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -386,7 +386,7 @@
             // btn_Guardar
             // 
             this.btn_Guardar.Image = global::App_PruebaDulfran2023.Properties.Resources.disco_flexible;
-            this.btn_Guardar.Location = new System.Drawing.Point(261, 132);
+            this.btn_Guardar.Location = new System.Drawing.Point(394, 137);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(30, 30);
             this.btn_Guardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -397,7 +397,7 @@
             // btn_Nuevo
             // 
             this.btn_Nuevo.Image = global::App_PruebaDulfran2023.Properties.Resources.agregar_archivo__2_;
-            this.btn_Nuevo.Location = new System.Drawing.Point(225, 132);
+            this.btn_Nuevo.Location = new System.Drawing.Point(358, 137);
             this.btn_Nuevo.Name = "btn_Nuevo";
             this.btn_Nuevo.Size = new System.Drawing.Size(30, 30);
             this.btn_Nuevo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -408,18 +408,19 @@
             // txt_Correo
             // 
             this.txt_Correo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Correo.Location = new System.Drawing.Point(288, 82);
+            this.txt_Correo.Location = new System.Drawing.Point(76, 134);
             this.txt_Correo.MaxLength = 120;
             this.txt_Correo.Name = "txt_Correo";
-            this.txt_Correo.Size = new System.Drawing.Size(105, 20);
+            this.txt_Correo.Size = new System.Drawing.Size(237, 20);
             this.txt_Correo.TabIndex = 12;
+            this.txt_Correo.TextChanged += new System.EventHandler(this.txt_Correo_TextChanged);
             this.txt_Correo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Correo_KeyPress);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(247, 83);
+            this.label7.Location = new System.Drawing.Point(32, 137);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(41, 13);
             this.label7.TabIndex = 11;
@@ -428,10 +429,10 @@
             // txt_Contacto
             // 
             this.txt_Contacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Contacto.Location = new System.Drawing.Point(80, 116);
+            this.txt_Contacto.Location = new System.Drawing.Point(235, 52);
             this.txt_Contacto.MaxLength = 10;
             this.txt_Contacto.Name = "txt_Contacto";
-            this.txt_Contacto.Size = new System.Drawing.Size(105, 20);
+            this.txt_Contacto.Size = new System.Drawing.Size(78, 20);
             this.txt_Contacto.TabIndex = 10;
             this.txt_Contacto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Contacto_KeyPress);
             // 
@@ -439,7 +440,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(30, 119);
+            this.label6.Location = new System.Drawing.Point(185, 56);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 13);
             this.label6.TabIndex = 9;
@@ -448,10 +449,10 @@
             // txt_Apellidos
             // 
             this.txt_Apellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Apellidos.Location = new System.Drawing.Point(288, 53);
+            this.txt_Apellidos.Location = new System.Drawing.Point(76, 108);
             this.txt_Apellidos.MaxLength = 20;
             this.txt_Apellidos.Name = "txt_Apellidos";
-            this.txt_Apellidos.Size = new System.Drawing.Size(105, 20);
+            this.txt_Apellidos.Size = new System.Drawing.Size(237, 20);
             this.txt_Apellidos.TabIndex = 8;
             this.txt_Apellidos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Apellidos_KeyPress);
             // 
@@ -459,11 +460,12 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(239, 56);
+            this.label5.Location = new System.Drawing.Point(21, 111);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 7;
             this.label5.Text = "Apellidos:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -543,7 +545,7 @@
             // btn_ActualizarDocente
             // 
             this.btn_ActualizarDocente.Image = global::App_PruebaDulfran2023.Properties.Resources.actualizar__1_;
-            this.btn_ActualizarDocente.Location = new System.Drawing.Point(238, 106);
+            this.btn_ActualizarDocente.Location = new System.Drawing.Point(240, 142);
             this.btn_ActualizarDocente.Name = "btn_ActualizarDocente";
             this.btn_ActualizarDocente.Size = new System.Drawing.Size(30, 30);
             this.btn_ActualizarDocente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -554,7 +556,7 @@
             // btn_ConsultarDocente
             // 
             this.btn_ConsultarDocente.Image = global::App_PruebaDulfran2023.Properties.Resources.buscar;
-            this.btn_ConsultarDocente.Location = new System.Drawing.Point(202, 106);
+            this.btn_ConsultarDocente.Location = new System.Drawing.Point(204, 142);
             this.btn_ConsultarDocente.Name = "btn_ConsultarDocente";
             this.btn_ConsultarDocente.Size = new System.Drawing.Size(30, 30);
             this.btn_ConsultarDocente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -565,7 +567,7 @@
             // btn_GuardarDocente
             // 
             this.btn_GuardarDocente.Image = global::App_PruebaDulfran2023.Properties.Resources.disco_flexible;
-            this.btn_GuardarDocente.Location = new System.Drawing.Point(166, 106);
+            this.btn_GuardarDocente.Location = new System.Drawing.Point(168, 142);
             this.btn_GuardarDocente.Name = "btn_GuardarDocente";
             this.btn_GuardarDocente.Size = new System.Drawing.Size(30, 30);
             this.btn_GuardarDocente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -576,7 +578,7 @@
             // btn_NuevoDocente
             // 
             this.btn_NuevoDocente.Image = global::App_PruebaDulfran2023.Properties.Resources.agregar_archivo__2_;
-            this.btn_NuevoDocente.Location = new System.Drawing.Point(130, 106);
+            this.btn_NuevoDocente.Location = new System.Drawing.Point(132, 142);
             this.btn_NuevoDocente.Name = "btn_NuevoDocente";
             this.btn_NuevoDocente.Size = new System.Drawing.Size(30, 30);
             this.btn_NuevoDocente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -587,17 +589,17 @@
             // txt_CorreoDocentes
             // 
             this.txt_CorreoDocentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CorreoDocentes.Location = new System.Drawing.Point(250, 79);
+            this.txt_CorreoDocentes.Location = new System.Drawing.Point(73, 104);
             this.txt_CorreoDocentes.MaxLength = 120;
             this.txt_CorreoDocentes.Name = "txt_CorreoDocentes";
-            this.txt_CorreoDocentes.Size = new System.Drawing.Size(105, 20);
+            this.txt_CorreoDocentes.Size = new System.Drawing.Size(250, 20);
             this.txt_CorreoDocentes.TabIndex = 12;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(212, 81);
+            this.label8.Location = new System.Drawing.Point(33, 108);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 13);
             this.label8.TabIndex = 11;
@@ -606,22 +608,24 @@
             // txt_ContactoDocentes
             // 
             this.txt_ContactoDocentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ContactoDocentes.Location = new System.Drawing.Point(84, 78);
+            this.txt_ContactoDocentes.Location = new System.Drawing.Point(223, 53);
             this.txt_ContactoDocentes.MaxLength = 10;
             this.txt_ContactoDocentes.Name = "txt_ContactoDocentes";
-            this.txt_ContactoDocentes.Size = new System.Drawing.Size(105, 20);
+            this.txt_ContactoDocentes.Size = new System.Drawing.Size(100, 20);
             this.txt_ContactoDocentes.TabIndex = 10;
+            this.txt_ContactoDocentes.TextChanged += new System.EventHandler(this.txt_ContactoDocentes_TextChanged);
             this.txt_ContactoDocentes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ContactoDocentes_KeyPress);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(35, 82);
+            this.label9.Location = new System.Drawing.Point(171, 55);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(53, 13);
             this.label9.TabIndex = 9;
             this.label9.Text = "Contacto:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label11
             // 
@@ -637,10 +641,10 @@
             // txt_NombreDocentes
             // 
             this.txt_NombreDocentes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NombreDocentes.Location = new System.Drawing.Point(250, 52);
+            this.txt_NombreDocentes.Location = new System.Drawing.Point(73, 77);
             this.txt_NombreDocentes.MaxLength = 30;
             this.txt_NombreDocentes.Name = "txt_NombreDocentes";
-            this.txt_NombreDocentes.Size = new System.Drawing.Size(105, 20);
+            this.txt_NombreDocentes.Size = new System.Drawing.Size(250, 20);
             this.txt_NombreDocentes.TabIndex = 5;
             this.txt_NombreDocentes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NombreDocentes_KeyPress);
             // 
@@ -648,7 +652,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(8, 55);
+            this.label12.Location = new System.Drawing.Point(1, 56);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(73, 13);
             this.label12.TabIndex = 2;
@@ -658,7 +662,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(201, 55);
+            this.label13.Location = new System.Drawing.Point(22, 82);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(52, 13);
             this.label13.TabIndex = 4;
@@ -667,10 +671,10 @@
             // txt_IdDocente
             // 
             this.txt_IdDocente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_IdDocente.Location = new System.Drawing.Point(84, 52);
+            this.txt_IdDocente.Location = new System.Drawing.Point(73, 52);
             this.txt_IdDocente.MaxLength = 10;
             this.txt_IdDocente.Name = "txt_IdDocente";
-            this.txt_IdDocente.Size = new System.Drawing.Size(105, 20);
+            this.txt_IdDocente.Size = new System.Drawing.Size(89, 20);
             this.txt_IdDocente.TabIndex = 3;
             this.txt_IdDocente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_IdDocente_KeyPress);
             // 
@@ -699,6 +703,23 @@
             this.panel4.Size = new System.Drawing.Size(409, 292);
             this.panel4.TabIndex = 9;
             // 
+            // lbL_Cod_Cur
+            // 
+            this.lbL_Cod_Cur.AutoSize = true;
+            this.lbL_Cod_Cur.Location = new System.Drawing.Point(185, 111);
+            this.lbL_Cod_Cur.Name = "lbL_Cod_Cur";
+            this.lbL_Cod_Cur.Size = new System.Drawing.Size(10, 13);
+            this.lbL_Cod_Cur.TabIndex = 32;
+            this.lbL_Cod_Cur.Text = "-";
+            // 
+            // fecha
+            // 
+            this.fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fecha.Location = new System.Drawing.Point(79, 142);
+            this.fecha.Name = "fecha";
+            this.fecha.Size = new System.Drawing.Size(100, 20);
+            this.fecha.TabIndex = 31;
+            // 
             // lbl_Nom_Est
             // 
             this.lbl_Nom_Est.AutoSize = true;
@@ -716,6 +737,16 @@
             this.lbl_Nom_Doc.Size = new System.Drawing.Size(10, 13);
             this.lbl_Nom_Doc.TabIndex = 29;
             this.lbl_Nom_Doc.Text = "-";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(33, 145);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(40, 13);
+            this.label16.TabIndex = 19;
+            this.label16.Text = "Fecha:";
             // 
             // txt_Id_Doc
             // 
@@ -779,16 +810,6 @@
             this.label14.Size = new System.Drawing.Size(63, 13);
             this.label14.TabIndex = 22;
             this.label14.Text = "Id Docente:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(33, 145);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(40, 13);
-            this.label16.TabIndex = 19;
-            this.label16.Text = "Fecha:";
             // 
             // dtg_Programacion
             // 
@@ -1136,6 +1157,23 @@
             this.panel6.Size = new System.Drawing.Size(362, 250);
             this.panel6.TabIndex = 11;
             // 
+            // lbl_Nom_Anotaciones
+            // 
+            this.lbl_Nom_Anotaciones.AutoSize = true;
+            this.lbl_Nom_Anotaciones.Location = new System.Drawing.Point(199, 55);
+            this.lbl_Nom_Anotaciones.Name = "lbl_Nom_Anotaciones";
+            this.lbl_Nom_Anotaciones.Size = new System.Drawing.Size(10, 13);
+            this.lbl_Nom_Anotaciones.TabIndex = 33;
+            this.lbl_Nom_Anotaciones.Text = "-";
+            // 
+            // fecha2
+            // 
+            this.fecha2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fecha2.Location = new System.Drawing.Point(80, 81);
+            this.fecha2.Name = "fecha2";
+            this.fecha2.Size = new System.Drawing.Size(116, 20);
+            this.fecha2.TabIndex = 32;
+            // 
             // txt_Anotaciones
             // 
             this.txt_Anotaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1165,6 +1203,7 @@
             this.txt_ID_Nota.Name = "txt_ID_Nota";
             this.txt_ID_Nota.Size = new System.Drawing.Size(115, 20);
             this.txt_ID_Nota.TabIndex = 25;
+            this.txt_ID_Nota.TextChanged += new System.EventHandler(this.txt_ID_Nota_TextChanged);
             this.txt_ID_Nota.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ID_Nota_KeyPress);
             this.txt_ID_Nota.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_ID_Nota_KeyUp);
             // 
@@ -1298,6 +1337,23 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(408, 250);
             this.panel7.TabIndex = 12;
+            // 
+            // lbl_Nom_Estudiante
+            // 
+            this.lbl_Nom_Estudiante.AutoSize = true;
+            this.lbl_Nom_Estudiante.Location = new System.Drawing.Point(190, 51);
+            this.lbl_Nom_Estudiante.Name = "lbl_Nom_Estudiante";
+            this.lbl_Nom_Estudiante.Size = new System.Drawing.Size(10, 13);
+            this.lbl_Nom_Estudiante.TabIndex = 33;
+            this.lbl_Nom_Estudiante.Text = "-";
+            // 
+            // Fecha3
+            // 
+            this.Fecha3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Fecha3.Location = new System.Drawing.Point(79, 107);
+            this.Fecha3.Name = "Fecha3";
+            this.Fecha3.Size = new System.Drawing.Size(100, 20);
+            this.Fecha3.TabIndex = 32;
             // 
             // txt_Nota
             // 
@@ -1439,57 +1495,6 @@
             this.label31.Size = new System.Drawing.Size(244, 25);
             this.label31.TabIndex = 6;
             this.label31.Text = "Módulo Calificaciones";
-            // 
-            // fecha
-            // 
-            this.fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fecha.Location = new System.Drawing.Point(79, 142);
-            this.fecha.Name = "fecha";
-            this.fecha.Size = new System.Drawing.Size(100, 20);
-            this.fecha.TabIndex = 31;
-            // 
-            // fecha2
-            // 
-            this.fecha2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fecha2.Location = new System.Drawing.Point(80, 81);
-            this.fecha2.Name = "fecha2";
-            this.fecha2.Size = new System.Drawing.Size(116, 20);
-            this.fecha2.TabIndex = 32;
-            // 
-            // Fecha3
-            // 
-            this.Fecha3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.Fecha3.Location = new System.Drawing.Point(79, 107);
-            this.Fecha3.Name = "Fecha3";
-            this.Fecha3.Size = new System.Drawing.Size(100, 20);
-            this.Fecha3.TabIndex = 32;
-            // 
-            // lbL_Cod_Cur
-            // 
-            this.lbL_Cod_Cur.AutoSize = true;
-            this.lbL_Cod_Cur.Location = new System.Drawing.Point(185, 111);
-            this.lbL_Cod_Cur.Name = "lbL_Cod_Cur";
-            this.lbL_Cod_Cur.Size = new System.Drawing.Size(10, 13);
-            this.lbL_Cod_Cur.TabIndex = 32;
-            this.lbL_Cod_Cur.Text = "-";
-            // 
-            // lbl_Nom_Estudiante
-            // 
-            this.lbl_Nom_Estudiante.AutoSize = true;
-            this.lbl_Nom_Estudiante.Location = new System.Drawing.Point(190, 51);
-            this.lbl_Nom_Estudiante.Name = "lbl_Nom_Estudiante";
-            this.lbl_Nom_Estudiante.Size = new System.Drawing.Size(10, 13);
-            this.lbl_Nom_Estudiante.TabIndex = 33;
-            this.lbl_Nom_Estudiante.Text = "-";
-            // 
-            // lbl_Nom_Anotaciones
-            // 
-            this.lbl_Nom_Anotaciones.AutoSize = true;
-            this.lbl_Nom_Anotaciones.Location = new System.Drawing.Point(199, 55);
-            this.lbl_Nom_Anotaciones.Name = "lbl_Nom_Anotaciones";
-            this.lbl_Nom_Anotaciones.Size = new System.Drawing.Size(10, 13);
-            this.lbl_Nom_Anotaciones.TabIndex = 33;
-            this.lbl_Nom_Anotaciones.Text = "-";
             // 
             // Form1
             // 
