@@ -729,7 +729,7 @@
             // lbl_Nom_Doc
             // 
             this.lbl_Nom_Doc.AutoSize = true;
-            this.lbl_Nom_Doc.Location = new System.Drawing.Point(184, 55);
+            this.lbl_Nom_Doc.Location = new System.Drawing.Point(185, 56);
             this.lbl_Nom_Doc.Name = "lbl_Nom_Doc";
             this.lbl_Nom_Doc.Size = new System.Drawing.Size(10, 13);
             this.lbl_Nom_Doc.TabIndex = 29;

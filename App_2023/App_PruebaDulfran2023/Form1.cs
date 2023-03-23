@@ -26,12 +26,15 @@ namespace App_PruebaDulfran2023
         Boolean sw = false;
         int estado;
         string ruta_directorio_Raiz;
+       
         public Form1()
         {
             InitializeComponent();
             ruta_directorio_Raiz = Path.Combine(Application.StartupPath + "\\Imagenes");
             fnt_LimpiarControles();
-
+            btn_Actualizar.Enabled = false;
+            btn_ActualizarDocente.Enabled = false;
+            btn_Actualizarprograma.Enabled = false;
 
         }
 
@@ -160,6 +163,7 @@ namespace App_PruebaDulfran2023
         private void btn_Consultar_Click(object sender, EventArgs e)
         {
             fnt_ConsultarEstudiante(txt_ID.Text);
+            btn_Actualizar.Enabled = true;
         }
         private void fnt_ActualizarEstudiante(string n, string a, string cot, string corr, string rfot)
         {
@@ -256,6 +260,7 @@ namespace App_PruebaDulfran2023
         private void btn_ConsultarDocente_Click(object sender, EventArgs e)
         {
             fnt_ConsultarDocente(txt_IdDocente.Text);
+            btn_ActualizarDocente.Enabled = true;
         }
         private void fnt_ActualizarDocente(string NomDoc, string ContDoc, string corrDoc)
         {
@@ -482,7 +487,9 @@ namespace App_PruebaDulfran2023
         }
         private void btn_Consultar_programa_Click(object sender, EventArgs e)
         {
+            
             fnt_ConsultarPrograma(txt_Id_Doc.Text);
+            btn_Actualizarprograma.Enabled = true;
         }
         private void fnt_Actualizarprograma(string fecha, string Id_Est, string cod_Cur)
         {
