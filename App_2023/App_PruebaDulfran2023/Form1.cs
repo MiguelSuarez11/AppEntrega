@@ -6,9 +6,11 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace App_PruebaDulfran2023
 {
@@ -22,6 +24,7 @@ namespace App_PruebaDulfran2023
         cls_Estudiantes[] Estudiante = new cls_Estudiantes[100];
         int posicion = 0, registro = 0;
         Boolean sw = false;
+        int estado;
         string ruta_directorio_Raiz;
         public Form1()
         {
@@ -75,7 +78,20 @@ namespace App_PruebaDulfran2023
                 MessageBox.Show("Esta persona ya se encuentra registrado");
             }
         }
+        public void fnt_validarCorreo1(string correo)
+        {
+            estado = 0;
+            try
+            {
+                new MailAddress(txt_Correo.Text);
+                estado = 1;
+            }
+            catch (FormatException)
+            {
+                estado = 0;
+            }
 
+        }
 
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
@@ -86,10 +102,25 @@ namespace App_PruebaDulfran2023
             }
             else
             {
+
+
+            }
+
+
+            {
+                fnt_validarCorreo1(txt_Correo.Text);
+                if (estado == 0)
+                {
+                    MessageBox.Show("Correo no valido");
+                }
+
+                else
+            {
                 fnt_GuardarEstudiante(txt_ID.Text, txt_Nombres.Text, txt_Apellidos.Text,
                     txt_Contacto.Text, txt_Correo.Text);
             }
         }
+            }
         private void fnt_ConsultarEstudiante(string id)
         {
             posicion = 0;
@@ -313,17 +344,33 @@ namespace App_PruebaDulfran2023
 
         private void btn_GuardarDocente_Click_1(object sender, EventArgs e)
         {
+
             if (txt_IdDocente.Text == "" ||
                 txt_NombreDocentes.Text == "" || txt_ContactoDocentes.Text == "" ||
                 txt_CorreoDocentes.Text == "")
             {
-                MessageBox.Show("Debe ingresat toda la informacion solicitada");
+                MessageBox.Show("Debe ingresar toda la informacion solicitada");
+
             }
-            else
+            else { 
+            
+            
+            }
+
+            
             {
-                fnt_GuardarDocente(txt_IdDocente.Text, txt_NombreDocentes.Text, txt_ContactoDocentes.Text, txt_CorreoDocentes.Text);
+                fnt_validarCorreo(txt_Correo.Text);
+                if (estado == 0)
+                {
+                    MessageBox.Show("Correo no valido");
+                }
+
+                else { 
+                        fnt_GuardarDocente(txt_IdDocente.Text, txt_NombreDocentes.Text, txt_ContactoDocentes.Text, txt_CorreoDocentes.Text);
+                }
             }
         }
+    
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -347,7 +394,7 @@ namespace App_PruebaDulfran2023
         }
         private void fnt_LimpiarControlesPrograma()
         {
-            
+
             txt_Id_Doc.Clear();
             txt_Id_Est.Clear();
             txt_Cod_Cur.Clear();
@@ -561,7 +608,7 @@ namespace App_PruebaDulfran2023
         private void fnt_LimpiarControlesAnotaciones()
         {
             txt_ID_Nota.Clear();
-           
+
             txt_Anotaciones.Clear();
             txt_ID_Nota.Focus();
         }
@@ -677,7 +724,7 @@ namespace App_PruebaDulfran2023
             }
             if (sw == false)
             {
-                dtg_Anotaciones.Rows.Add(ID_EC, FechaC, Notas);
+                dtg_Calificaciones.Rows.Add(ID_EC, FechaC, Notas);
                 MessageBox.Show("registro exitoso");
             }
             else
@@ -922,23 +969,36 @@ namespace App_PruebaDulfran2023
 
         private void txt_Nota_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (Char.IsNumber(e.KeyChar))
+            if (e.KeyChar == 8)
             {
                 e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
+                return;
             }
 
-            else if (Char.IsSeparator(e.KeyChar))
+
+            bool IsDec = false;
+            int nroDec = 0;
+
+            for (int i = 0; i < txt_ID_Nota.Text.Length; i++)
             {
-                e.Handled = true;
+                if (txt_Nota.Text[i] == '.')
+                    IsDec = true;
+
+                if (IsDec && nroDec++ >= 2)
+                {
+                    e.Handled = true;
+                    return;
+                }
+
+
             }
+
+            if (e.KeyChar >= 48 && e.KeyChar <= 57)
+                e.Handled = false;
+            else if (e.KeyChar == 46)
+                e.Handled = (IsDec) ? true : false;
             else
-            {
                 e.Handled = true;
-            }
         }
 
         private void txt_Id_Doc_KeyUp(object sender, KeyEventArgs e)
@@ -1022,6 +1082,7 @@ namespace App_PruebaDulfran2023
             }
         }
 
+
         private void txt_ID_CAL_KeyUp(object sender, KeyEventArgs e)
         {
             Boolean sw = false; int posicion = 0;
@@ -1075,6 +1136,26 @@ namespace App_PruebaDulfran2023
 
             }
         }
+        public void fnt_validarCorreo(string correo)
+        {
+            estado = 0;
+            try
+            {
+                new MailAddress(txt_CorreoDocentes.Text);
+                estado = 1;
+            }
+            catch (FormatException)
+            {
+                estado = 0;
+            }
+
+        }
+
+
+        private void txt_CorreoDocentes_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
 
         private void txt_Nombre_Curso_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -1085,9 +1166,10 @@ namespace App_PruebaDulfran2023
             }
         }
 
-      
+
     }
 }
+
    
     
     
