@@ -413,7 +413,7 @@
             this.txt_Correo.Name = "txt_Correo";
             this.txt_Correo.Size = new System.Drawing.Size(237, 20);
             this.txt_Correo.TabIndex = 12;
-            this.txt_Correo.TextChanged += new System.EventHandler(this.txt_Correo_TextChanged);
+            
             this.txt_Correo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Correo_KeyPress);
             // 
             // label7
@@ -465,7 +465,7 @@
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 7;
             this.label5.Text = "Apellidos:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+          
             // 
             // label4
             // 
@@ -613,7 +613,7 @@
             this.txt_ContactoDocentes.Name = "txt_ContactoDocentes";
             this.txt_ContactoDocentes.Size = new System.Drawing.Size(100, 20);
             this.txt_ContactoDocentes.TabIndex = 10;
-            this.txt_ContactoDocentes.TextChanged += new System.EventHandler(this.txt_ContactoDocentes_TextChanged);
+            
             this.txt_ContactoDocentes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ContactoDocentes_KeyPress);
             // 
             // label9
@@ -625,7 +625,7 @@
             this.label9.Size = new System.Drawing.Size(53, 13);
             this.label9.TabIndex = 9;
             this.label9.Text = "Contacto:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+           
             // 
             // label11
             // 
@@ -1203,7 +1203,7 @@
             this.txt_ID_Nota.Name = "txt_ID_Nota";
             this.txt_ID_Nota.Size = new System.Drawing.Size(115, 20);
             this.txt_ID_Nota.TabIndex = 25;
-            this.txt_ID_Nota.TextChanged += new System.EventHandler(this.txt_ID_Nota_TextChanged);
+            
             this.txt_ID_Nota.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ID_Nota_KeyPress);
             this.txt_ID_Nota.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_ID_Nota_KeyUp);
             // 
