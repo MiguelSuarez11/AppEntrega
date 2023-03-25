@@ -35,6 +35,9 @@ namespace App_PruebaDulfran2023
             btn_Actualizar.Enabled = false;
             btn_ActualizarDocente.Enabled = false;
             btn_Actualizarprograma.Enabled = false;
+            btn_ActualizarAnotaciones.Enabled = false;
+            btn_ActualizarCalificacion.Enabled = false;
+            btn_ActualizarCurso.Enabled = false;
 
         }
 
@@ -597,6 +600,7 @@ namespace App_PruebaDulfran2023
         private void btn_ConsultarCurso_Click(object sender, EventArgs e)
         {
             fnt_ConsultarCurso(txt_Codigo_Curso.Text);
+            btn_ActualizarCurso.Enabled = true;
         }
         private void fnt_ActualizarCurso(string NombreCur, string Creditos, string Valor, string Horario)
         {
@@ -694,6 +698,7 @@ namespace App_PruebaDulfran2023
         private void btn_ConsultarAnotaciones_Click(object sender, EventArgs e)
         {
             fnt_ConsultarAnotaciones(txt_ID_Nota.Text);
+            btn_ActualizarAnotaciones.Enabled = true;
         }
         private void fnt_ActualizarAnotaciones(string FechaA, string Anotaciones)
         {
@@ -780,14 +785,15 @@ namespace App_PruebaDulfran2023
                 }
                 else
                 {
-                    Fecha3.Text = Convert.ToString(dtg_Cursos.Rows[posicion].Cells[1].Value);
-                    txt_Nota.Text = Convert.ToString(dtg_Cursos.Rows[posicion].Cells[2].Value);
+                    Fecha3.Text = Convert.ToString(dtg_Calificaciones.Rows[posicion].Cells[1].Value);
+                    txt_Nota.Text = Convert.ToString(dtg_Calificaciones.Rows[posicion].Cells[2].Value);
                 }
             }
         }
         private void btn_ConsultarCalificacion_Click(object sender, EventArgs e)
         {
             fnt_ConsultarCalificaciones(txt_ID_CAL.Text);
+            btn_ActualizarCalificacion.Enabled = true;
         }
         private void fnt_ActualizarCalificaciones(string FechaC, string Notas)
         {
