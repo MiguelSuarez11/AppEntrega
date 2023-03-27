@@ -38,7 +38,7 @@ namespace App_PruebaDulfran2023
             btn_ActualizarAnotaciones.Enabled = false;
             btn_ActualizarCalificacion.Enabled = false;
             btn_ActualizarCurso.Enabled = false;
-
+            ptb_Foto.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -159,7 +159,8 @@ namespace App_PruebaDulfran2023
                     txt_Contacto.Text = Convert.ToString(dtg_Estudiantes.Rows[posicion].Cells[3].Value);
                     txt_Correo.Text = Convert.ToString(dtg_Estudiantes.Rows[posicion].Cells[4].Value);
                     ptb_Foto.Image = Image.FromFile(Convert.ToString(dtg_Estudiantes.Rows[posicion].Cells[5].Value));
-                }
+                    ptb_Foto.Enabled = false;
+                }   
             }
 
         }
@@ -174,7 +175,8 @@ namespace App_PruebaDulfran2023
             dtg_Estudiantes.Rows[posicion].Cells[2].Value = a;
             dtg_Estudiantes.Rows[posicion].Cells[3].Value = cot;
             dtg_Estudiantes.Rows[posicion].Cells[4].Value = corr;
-            dtg_Estudiantes.Rows[posicion].Cells[5].Value = rfot;
+            
+
             MessageBox.Show("Registro actualizado con exito");
         }
 
