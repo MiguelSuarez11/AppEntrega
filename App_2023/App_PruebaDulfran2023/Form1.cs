@@ -409,6 +409,9 @@ namespace App_PruebaDulfran2023
             txt_Id_Est.Clear();
             txt_Cod_Cur.Clear();
             txt_Id_Doc.Focus();
+            lbl_Nom_Est.Text = "";
+            lbl_Nom_Doc.Text = "";
+            lbL_Cod_Cur.Text = "";
         }
         private void pictureBox5_Click(object sender, EventArgs e)
         {
@@ -624,6 +627,7 @@ namespace App_PruebaDulfran2023
 
             txt_Anotaciones.Clear();
             txt_ID_Nota.Focus();
+            lbl_Nom_Anotaciones.Text = "";
         }
         private void btn_NuevaNota_Click(object sender, EventArgs e)
         {
@@ -718,6 +722,7 @@ namespace App_PruebaDulfran2023
             txt_ID_CAL.Clear();
             txt_Nota.Clear();
             txt_ID_CAL.Focus();
+            lbl_Nom_Estudiante.Text = "";
         }
         private void btn_Nueva_Calificacion_Click(object sender, EventArgs e)
         {
@@ -1168,6 +1173,11 @@ namespace App_PruebaDulfran2023
 
 
         private void txt_CorreoDocentes_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void lbl_Nom_Est_Click(object sender, EventArgs e)
         {
 
         }
