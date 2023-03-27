@@ -765,6 +765,7 @@
             this.txt_Cod_Cur.Name = "txt_Cod_Cur";
             this.txt_Cod_Cur.Size = new System.Drawing.Size(100, 20);
             this.txt_Cod_Cur.TabIndex = 27;
+            this.txt_Cod_Cur.TextChanged += new System.EventHandler(this.txt_Cod_Cur_TextChanged);
             this.txt_Cod_Cur.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Cod_Cur_KeyPress);
             this.txt_Cod_Cur.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Cod_Cur_KeyUp);
             // 
@@ -796,6 +797,7 @@
             this.txt_Id_Est.Name = "txt_Id_Est";
             this.txt_Id_Est.Size = new System.Drawing.Size(100, 20);
             this.txt_Id_Est.TabIndex = 25;
+            this.txt_Id_Est.TextChanged += new System.EventHandler(this.txt_Id_Est_TextChanged);
             this.txt_Id_Est.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Id_Est_KeyPress);
             this.txt_Id_Est.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Id_Est_KeyUp);
             // 

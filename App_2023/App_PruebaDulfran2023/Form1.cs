@@ -26,6 +26,8 @@ namespace App_PruebaDulfran2023
         Boolean sw = false;
         int estado;
         string ruta_directorio_Raiz;
+        Boolean sw2 = false;
+        Boolean sw3 = false;
        
         public Form1()
         {
@@ -39,6 +41,8 @@ namespace App_PruebaDulfran2023
             btn_ActualizarCalificacion.Enabled = false;
             btn_ActualizarCurso.Enabled = false;
             ptb_Foto.Enabled = true;
+            
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -422,6 +426,57 @@ namespace App_PruebaDulfran2023
         {
 
         }
+        private void fnt_ValidEstudianteProgramacion(String Identificacion)
+        {
+            sw2 = false;
+            for (int i = 0; i < dtg_Estudiantes.RowCount; i++)
+            {
+                if (Identificacion.Equals(dtg_Estudiantes.Rows[i].Cells[0].Value))
+                {
+                    posicion = i;
+                    sw2 = true;
+                    break;
+                }
+            }
+            if (sw2 == false)
+            {
+                MessageBox.Show("El numero de identificacion de estudiante ingresado no existe en los registros");
+            }
+        }
+        private void fnt_ValidProfesorProgramacion(String Identificacion)
+        {
+            for (int i = 0; i < dtg_Docentes.RowCount; i++)
+            {
+                sw3 = false;
+                if (Identificacion.Equals(dtg_Docentes.Rows[i].Cells[1].Value))
+                {
+                    posicion = i;
+                    sw3 = true;
+                    break;
+                }
+            }
+            if (sw3 == false)
+            {
+                MessageBox.Show("El numero de identificacion de docente ingresado no existe en los registros");
+            }
+        }
+        private void fnt_ValidCodigoProgramacion(String Codigo)
+        {
+            sw2 = false;
+            for (int i = 0; i < dtg_Cursos.RowCount; i++)
+            {
+                if (Codigo.Equals(dtg_Cursos.Rows[i].Cells[0].Value))
+                {
+                    posicion = i;
+                    sw2 = true;
+                    break;
+                }
+            }
+            if (sw2 == false)
+            {
+                MessageBox.Show("El codigo ingresado no existe en los registros");
+            }
+        }
         private void fnt_GuardarProgramacion(string fecha, string Id_Docen, string Id_Est, string cod_Cur)
         {
             sw = false;
@@ -440,10 +495,8 @@ namespace App_PruebaDulfran2023
                 dtg_Programacion.Rows.Add(fecha, Id_Docen, Id_Est, cod_Cur);
                 MessageBox.Show("registro exitoso");
             }
-            else
-            {
-                MessageBox.Show("Esta persona ya esta registrada");
-            }
+            
+            
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -458,6 +511,7 @@ namespace App_PruebaDulfran2023
             else
             {
                 fnt_GuardarProgramacion(fecha.Text, txt_Id_Doc.Text, txt_Id_Est.Text, txt_Cod_Cur.Text);
+                
             }
         }
 
@@ -1178,6 +1232,16 @@ namespace App_PruebaDulfran2023
         }
 
         private void lbl_Nom_Est_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Cod_Cur_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txt_Id_Est_TextChanged(object sender, EventArgs e)
         {
 
         }
